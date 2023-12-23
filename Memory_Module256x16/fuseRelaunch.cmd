@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/NTUST_FPGA/Memory_Module256x16/Mem256X16_tb_isim_par.exe" -prj "/home/ise/NTUST_FPGA/Memory_Module256x16/Mem256X16_tb_par.prj" "work.Mem256X16_tb" "work.glbl" 

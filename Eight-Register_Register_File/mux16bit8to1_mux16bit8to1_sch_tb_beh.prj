@@ -1,0 +1,7 @@
+vhdl work "mux8to1.vhf"
+verilog work "mux8to1_tb.v"
+verilog work "mux16bit8to1_tb.v"
+vhdl work "mux16bit8to1.vhf"
+verilog work "decoder_3to8_tb.v"
+vhdl work "decoder_3to8.vhf"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

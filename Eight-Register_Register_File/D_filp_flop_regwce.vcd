@@ -1,0 +1,231 @@
+$date
+   Mon Oct  9 14:41:13 2023
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module D_filp_flop_regwce_tb $end
+$var wire 1 ! qout $end
+$var reg 1 " CE $end
+$var reg 1 # clk $end
+$var reg 1 $ reset $end
+$var reg 1 % sin $end
+$scope module UUT $end
+$var wire 1 8! ce $end
+$var wire 1 7! clk $end
+$var wire 1 :! reset $end
+$var wire 1 = sin $end
+$var wire 1 0! qout $end
+$var wire 1 C xlxn_194 $end
+$var wire 1 O xlxn_195 $end
+$var wire 1 L xlxn_196 $end
+$var wire 1 U xlxn_197 $end
+$var wire 1 [ xlxn_198 $end
+$var wire 1 a xlxn_199 $end
+$var wire 1 g xlxn_200 $end
+$var wire 1 9! xlxn_201 $end
+$var wire 1 6! xlxn_202 $end
+$var wire 1 y xlxn_203 $end
+$var wire 1 v xlxn_204 $end
+$var wire 1 !! xlxn_205 $end
+$var wire 1 '! xlxn_206 $end
+$var wire 1 -! xlxn_207 $end
+$var wire 1 3! xlxn_208 $end
+$scope module XLXI_2 $end
+$var wire 1 C q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 = d $end
+$var wire 1 :! r $end
+$var wire 1 ? q_o $end
+$upscope $end
+$scope module XLXI_136 $end
+$var wire 1 O q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 C d $end
+$var wire 1 :! r $end
+$var wire 1 E q_o $end
+$upscope $end
+$scope module XLXI_138 $end
+$var wire 1 U q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 L d $end
+$var wire 1 :! r $end
+$var wire 1 K q_o $end
+$upscope $end
+$scope module XLXI_139 $end
+$var wire 1 L q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 O d $end
+$var wire 1 :! r $end
+$var wire 1 Q q_o $end
+$upscope $end
+$scope module XLXI_140 $end
+$var wire 1 [ q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 U d $end
+$var wire 1 :! r $end
+$var wire 1 W q_o $end
+$upscope $end
+$scope module XLXI_141 $end
+$var wire 1 a q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 [ d $end
+$var wire 1 :! r $end
+$var wire 1 ] q_o $end
+$upscope $end
+$scope module XLXI_142 $end
+$var wire 1 g q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 a d $end
+$var wire 1 :! r $end
+$var wire 1 c q_o $end
+$upscope $end
+$scope module XLXI_143 $end
+$var wire 1 9! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 g d $end
+$var wire 1 :! r $end
+$var wire 1 i q_o $end
+$upscope $end
+$scope module XLXI_162 $end
+$var wire 1 y q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 6! d $end
+$var wire 1 :! r $end
+$var wire 1 o q_o $end
+$upscope $end
+$scope module XLXI_163 $end
+$var wire 1 !! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 v d $end
+$var wire 1 :! r $end
+$var wire 1 u q_o $end
+$upscope $end
+$scope module XLXI_164 $end
+$var wire 1 v q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 y d $end
+$var wire 1 :! r $end
+$var wire 1 { q_o $end
+$upscope $end
+$scope module XLXI_165 $end
+$var wire 1 '! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 !! d $end
+$var wire 1 :! r $end
+$var wire 1 #! q_o $end
+$upscope $end
+$scope module XLXI_166 $end
+$var wire 1 -! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 '! d $end
+$var wire 1 :! r $end
+$var wire 1 )! q_o $end
+$upscope $end
+$scope module XLXI_167 $end
+$var wire 1 3! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 -! d $end
+$var wire 1 :! r $end
+$var wire 1 /! q_o $end
+$upscope $end
+$scope module XLXI_168 $end
+$var wire 1 0! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 3! d $end
+$var wire 1 :! r $end
+$var wire 1 5! q_o $end
+$upscope $end
+$scope module XLXI_169 $end
+$var wire 1 6! q $end
+$var wire 1 7! c $end
+$var wire 1 8! ce $end
+$var wire 1 9! d $end
+$var wire 1 :! r $end
+$var wire 1 ;! q_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+08!
+x7!
+0:!
+0=
+00!
+09!
+0"
+x#
+0$
+0%
+0!
+0C
+0O
+0L
+0U
+0[
+0a
+0g
+06!
+0y
+0v
+0!!
+0'!
+0-!
+03!
+0?
+0E
+0K
+0/!
+0Q
+0W
+0]
+0c
+0i
+0o
+0u
+0{
+0#!
+0)!
+05!
+0;!
+$end
+#5000
+1=
+1%
+#10000
+1:!
+0=
+1$
+0%
+#15000
+18!
+1=
+1"
+1%
+#20000
+08!
+0:!
+0=
+0"
+0$
+0%

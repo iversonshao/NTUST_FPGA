@@ -1,0 +1,219 @@
+V3 104
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/decoder_3t08.vhf 2023/10/20.03:05:07 P.20131013
+EN work/decoder_3t08 1697804357 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/decoder_3t08.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/decoder_3t08/BEHAVIORAL 1697804358 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/decoder_3t08.vhf \
+      EN work/decoder_3t08 1697804357 CP AND4 CP INV
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/D_filp_flop_regwce.vhf 2023/10/20.03:03:52 P.20131013
+EN work/D_filp_flop_regwce 1697804359 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/D_filp_flop_regwce.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D_filp_flop_regwce/BEHAVIORAL 1697804360 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/D_filp_flop_regwce.vhf \
+      EN work/D_filp_flop_regwce 1697804359 CP FDE
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf 2023/10/20.11:50:57 P.20131013
+EN work/OR8_MXILINX_mux16bit8to1 1697819846 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR8_MXILINX_mux16bit8to1/BEHAVIORAL 1697819847 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      EN work/OR8_MXILINX_mux16bit8to1 1697819846 CP FMAP CP OR2 CP OR4
+EN work/mux8to1_MUSER_mux16bit8to1 1697819848 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1_MUSER_mux16bit8to1/BEHAVIORAL 1697819849 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      EN work/mux8to1_MUSER_mux16bit8to1 1697819848 CP AND4 \
+      CP OR8_MXILINX_mux16bit8to1 CP INV
+EN work/mux16bit8to1 1697819850 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux16bit8to1/BEHAVIORAL 1697819851 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux16bit8to1.vhf \
+      EN work/mux16bit8to1 1697819850 CP mux8to1_MUSER_mux16bit8to1
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf 2023/10/21.02:42:07 P.20131013
+EN work/M2_1_MXILINX_mux4bit8to1 1697856524 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_mux4bit8to1/BEHAVIORAL 1697856525 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      EN work/M2_1_MXILINX_mux4bit8to1 1697856524 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_mux4bit8to1 1697856526 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_mux4bit8to1/BEHAVIORAL 1697856527 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      EN work/M2_1E_MXILINX_mux4bit8to1 1697856526 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_mux4bit8to1 1697856528 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_mux4bit8to1/BEHAVIORAL 1697856529 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      EN work/M4_1E_MXILINX_mux4bit8to1 1697856528 CP M2_1E_MXILINX_mux4bit8to1 \
+      CP MUXF5
+EN work/mux8to1_2_MUSER_mux4bit8to1 1697856530 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1_2_MUSER_mux4bit8to1/BEHAVIORAL 1697856531 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      EN work/mux8to1_2_MUSER_mux4bit8to1 1697856530 CP M4_1E_MXILINX_mux4bit8to1 \
+      CP M2_1_MXILINX_mux4bit8to1
+EN work/mux4bit8to1 1697856532 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux4bit8to1/BEHAVIORAL 1697856533 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf \
+      EN work/mux4bit8to1 1697856532 CP mux8to1_2_MUSER_mux4bit8to1
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf 2023/10/21.02:33:09 P.20131013
+AR work/mux8to1_MUSER_mux4X4bit8to1/BEHAVIORAL 1697823168 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/mux8to1_MUSER_mux4X4bit8to1 1697823167 CP AND4 \
+      CP OR8_MXILINX_mux4X4bit8to1 CP INV
+EN work/M2_1_MXILINX_mux4X4bit8to1 1697856512 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_mux4X4bit8to1/BEHAVIORAL 1697856513 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/M2_1_MXILINX_mux4X4bit8to1 1697856512 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_mux4X4bit8to1 1697856514 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_mux4X4bit8to1/BEHAVIORAL 1697856515 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/M2_1E_MXILINX_mux4X4bit8to1 1697856514 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_mux4X4bit8to1 1697856516 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_mux4X4bit8to1/BEHAVIORAL 1697856517 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/M4_1E_MXILINX_mux4X4bit8to1 1697856516 \
+      CP M2_1E_MXILINX_mux4X4bit8to1 CP MUXF5
+EN work/mux8to1_2_MUSER_mux4X4bit8to1 1697856518 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1_2_MUSER_mux4X4bit8to1/BEHAVIORAL 1697856519 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/mux8to1_2_MUSER_mux4X4bit8to1 1697856518 \
+      CP M4_1E_MXILINX_mux4X4bit8to1 CP M2_1_MXILINX_mux4X4bit8to1
+EN work/mux4bit8to1_MUSER_mux4X4bit8to1 1697856520 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux4bit8to1_MUSER_mux4X4bit8to1/BEHAVIORAL 1697856521 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/mux4bit8to1_MUSER_mux4X4bit8to1 1697856520 \
+      CP mux8to1_2_MUSER_mux4X4bit8to1
+EN work/mux4X4bit8to1 1697856522 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux4X4bit8to1/BEHAVIORAL 1697856523 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf \
+      EN work/mux4X4bit8to1 1697856522 CP mux4bit8to1_MUSER_mux4X4bit8to1
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1.vhf 2023/10/20.03:03:51 P.20131013
+EN work/OR8_MXILINX_mux8to1 1697823179 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR8_MXILINX_mux8to1/BEHAVIORAL 1697823180 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1.vhf \
+      EN work/OR8_MXILINX_mux8to1 1697823179 CP FMAP CP OR2 CP OR4
+EN work/mux8to1 1697823181 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1/BEHAVIORAL 1697823182 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1.vhf \
+      EN work/mux8to1 1697823181 CP AND4 CP OR8_MXILINX_mux8to1 CP INV
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf 2023/10/21.01:55:40 P.20131013
+EN work/M2_1_MXILINX_mux8to1_2 1697856534 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_mux8to1_2/BEHAVIORAL 1697856535 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      EN work/M2_1_MXILINX_mux8to1_2 1697856534 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_mux8to1_2 1697856536 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_mux8to1_2/BEHAVIORAL 1697856537 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      EN work/M2_1E_MXILINX_mux8to1_2 1697856536 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_mux8to1_2 1697856538 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_mux8to1_2/BEHAVIORAL 1697856539 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      EN work/M4_1E_MXILINX_mux8to1_2 1697856538 CP M2_1E_MXILINX_mux8to1_2 \
+      CP MUXF5
+EN work/mux8to1_2 1697856540 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1_2/BEHAVIORAL 1697856541 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf \
+      EN work/mux8to1_2 1697856540 CP M4_1E_MXILINX_mux8to1_2 \
+      CP M2_1_MXILINX_mux8to1_2
+FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf 2023/10/20.11:50:58 P.20131013
+EN work/decoder_3t08_MUSER_regfile 1697804345 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/decoder_3t08_MUSER_regfile/BEHAVIORAL 1697804346 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/decoder_3t08_MUSER_regfile 1697804345 CP AND4 CP INV
+EN work/OR8_MXILINX_regfile 1697804347 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR8_MXILINX_regfile/BEHAVIORAL 1697804348 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/OR8_MXILINX_regfile 1697804347 CP FMAP CP OR2 CP OR4
+EN work/mux8to1_MUSER_regfile 1697804349 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux8to1_MUSER_regfile/BEHAVIORAL 1697804350 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/mux8to1_MUSER_regfile 1697804349 CP AND4 CP OR8_MXILINX_regfile \
+      CP INV
+EN work/mux16bit8to1_MUSER_regfile 1697804351 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/mux16bit8to1_MUSER_regfile/BEHAVIORAL 1697804352 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/mux16bit8to1_MUSER_regfile 1697804351 CP mux8to1_MUSER_regfile
+EN work/D_filp_flop_regwce_MUSER_regfile 1697804353 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D_filp_flop_regwce_MUSER_regfile/BEHAVIORAL 1697804354 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/D_filp_flop_regwce_MUSER_regfile 1697804353 CP FDE
+EN work/regfile 1697804355 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/regfile/BEHAVIORAL 1697804356 \
+      FL /home/ise/NTUST_FPGA/Eight-Register_Register_File/regfile.vhf \
+      EN work/regfile 1697804355 CP D_filp_flop_regwce_MUSER_regfile \
+      CP mux16bit8to1_MUSER_regfile CP decoder_3t08_MUSER_regfile

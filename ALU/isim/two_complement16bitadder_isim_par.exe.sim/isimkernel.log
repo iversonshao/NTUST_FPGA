@@ -1,0 +1,30 @@
+Command line:
+   two_complement16bitadder_isim_par.exe
+     -simmode  gui
+     -sdfmax  /two_complement16bitadder/=netgen/par/two_complement16bitadder_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  33208
+
+Sat Oct 21 03:35:16 2023
+
+
+ Elaboration Time: 0.44 sec
+
+ Current Memory Usage: 205.136 Meg
+
+ Total Signals          : 1238
+ Total Nets             : 714
+ Total Signal Drivers   : 658
+ Total Blocks           : 412
+ Total Primitive Blocks : 210
+ Total Processes        : 658
+ Total Traceable Variables  : 1772
+ Total Scalar Nets and Variables : 11128
+
+ Total Simulation Time: 0.48 sec
+
+ Current Memory Usage: 282.857 Meg
+
+Sat Oct 21 03:35:36 2023
+

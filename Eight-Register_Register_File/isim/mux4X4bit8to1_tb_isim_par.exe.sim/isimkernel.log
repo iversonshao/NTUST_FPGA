@@ -1,0 +1,30 @@
+Command line:
+   mux4X4bit8to1_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /UUT/=netgen/par/mux4X4bit8to1_timesim.sdf
+     -sdfroot  /UUT
+     -simrunnum  0
+     -socket  60323
+
+Sat Oct 21 02:49:43 2023
+
+
+ Elaboration Time: 0.39 sec
+
+ Current Memory Usage: 205.484 Meg
+
+ Total Signals          : 1591
+ Total Nets             : 1010
+ Total Signal Drivers   : 844
+ Total Blocks           : 436
+ Total Primitive Blocks : 222
+ Total Processes        : 846
+ Total Traceable Variables  : 2105
+ Total Scalar Nets and Variables : 13263
+
+ Total Simulation Time: 0.41 sec
+
+ Current Memory Usage: 283.206 Meg
+
+Sat Oct 21 02:54:41 2023
+

@@ -1,0 +1,30 @@
+Command line:
+   ALU_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/ALU_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  38870
+
+Sun Nov 19 17:18:52 2023
+
+
+ Elaboration Time: 0.32 sec
+
+ Current Memory Usage: 203.026 Meg
+
+ Total Signals          : 855
+ Total Nets             : 536
+ Total Signal Drivers   : 460
+ Total Blocks           : 306
+ Total Primitive Blocks : 157
+ Total Processes        : 459
+ Total Traceable Variables  : 1280
+ Total Scalar Nets and Variables : 8898
+
+ Total Simulation Time: 0.33 sec
+
+ Current Memory Usage: 280.752 Meg
+
+Sun Nov 19 17:19:38 2023
+

@@ -1,0 +1,354 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Reading design: PC_Circuitry.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PC_Circuitry.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PC_Circuitry"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : PC_Circuitry
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf" is newer than current system time.
+Entity <FD16RE_MXILINX_PC_Circuitry> compiled.
+Entity <FD16RE_MXILINX_PC_Circuitry> (Architecture <BEHAVIORAL>) compiled.
+Entity <PC_Circuitry> compiled.
+Entity <PC_Circuitry> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PC_Circuitry> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <FD16RE_MXILINX_PC_Circuitry> in library <work> (architecture <BEHAVIORAL>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PC_Circuitry> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  XLXI_7_0" for instance <XLXI_7> in unit <PC_Circuitry>.
+Entity <PC_Circuitry> analyzed. Unit <PC_Circuitry> generated.
+
+Analyzing Entity <FD16RE_MXILINX_PC_Circuitry> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q8> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q9> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q10> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q11> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q12> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q13> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q14> in unit <FD16RE_MXILINX_PC_Circuitry>.
+    Set user-defined property "INIT =  0" for instance <I_Q15> in unit <FD16RE_MXILINX_PC_Circuitry>.
+Entity <FD16RE_MXILINX_PC_Circuitry> analyzed. Unit <FD16RE_MXILINX_PC_Circuitry> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FD16RE_MXILINX_PC_Circuitry>.
+    Related source file is "/home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf".
+Unit <FD16RE_MXILINX_PC_Circuitry> synthesized.
+
+
+Synthesizing Unit <PC_Circuitry>.
+    Related source file is "/home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf".
+WARNING:Xst:653 - Signal <XLXI_7_CE_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <PC_Circuitry> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PC_Circuitry> ...
+
+Optimizing unit <FD16RE_MXILINX_PC_Circuitry> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PC_Circuitry, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PC_Circuitry.ngr
+Top Level Output File Name         : PC_Circuitry
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# FlipFlops/Latches                : 16
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 17
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        8  out of    960     0%  
+ Number of Slice Flip Flops:             16  out of   1920     0%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of     83    40%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.163ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.163ns (Levels of Logic = 2)
+  Source:            PC_rst (PAD)
+  Destination:       XLXI_7/I_Q0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: PC_rst to XLXI_7/I_Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.034  PC_rst_IBUF (PC_rst_IBUF)
+     begin scope: 'XLXI_7'
+     FDRE:R                    0.911          I_Q0
+    ----------------------------------------
+    Total                      3.163ns (2.129ns logic, 1.034ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 2)
+  Source:            XLXI_7/I_Q15 (FF)
+  Destination:       PC<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_7/I_Q15 to PC<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.420  I_Q15 (Q<15>)
+     end scope: 'XLXI_7'
+     OBUF:I->O                 3.272          PC_15_OBUF (PC<15>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 0.72 secs
+ 
+--> 
+
+
+Total memory usage is 618544 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

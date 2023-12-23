@@ -1,0 +1,30 @@
+Command line:
+   Risc_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Risc_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  1
+     -socket  52588
+
+Fri Dec  1 10:56:40 2023
+
+
+ Elaboration Time: 0.14 sec
+
+ Current Memory Usage: 200.405 Meg
+
+ Total Signals          : 269
+ Total Nets             : 210
+ Total Signal Drivers   : 132
+ Total Blocks           : 117
+ Total Primitive Blocks : 64
+ Total Processes        : 140
+ Total Traceable Variables  : 486
+ Total Scalar Nets and Variables : 5853
+
+ Total Simulation Time: 0.16 sec
+
+ Current Memory Usage: 278.131 Meg
+
+Fri Dec  1 10:58:23 2023
+

@@ -1,0 +1,30 @@
+Command line:
+   RISCV16bit_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /UUT/=netgen/par/RISCV16bit_timesim.sdf
+     -sdfroot  /UUT
+     -simrunnum  0
+     -socket  47887
+
+Mon Oct 30 08:12:03 2023
+
+
+ Elaboration Time: 0.7 sec
+
+ Current Memory Usage: 209.007 Meg
+
+ Total Signals          : 2311
+ Total Nets             : 1418
+ Total Signal Drivers   : 1339
+ Total Blocks           : 638
+ Total Primitive Blocks : 334
+ Total Processes        : 1348
+ Total Traceable Variables  : 3285
+ Total Scalar Nets and Variables : 17128
+
+ Total Simulation Time: 0.74 sec
+
+ Current Memory Usage: 286.732 Meg
+
+Mon Oct 30 15:59:13 2023
+

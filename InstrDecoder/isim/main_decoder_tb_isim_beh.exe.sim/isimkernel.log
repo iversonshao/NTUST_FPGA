@@ -1,0 +1,28 @@
+Command line:
+   main_decoder_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  36553
+
+Mon Nov 20 15:52:06 2023
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 198.586 Meg
+
+ Total Signals          : 29
+ Total Nets             : 33
+ Total Signal Drivers   : 21
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 24
+ Total Traceable Variables  : 34
+ Total Scalar Nets and Variables : 133
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 276.185 Meg
+
+Mon Nov 20 15:53:13 2023
+

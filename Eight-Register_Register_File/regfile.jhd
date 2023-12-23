@@ -1,0 +1,23 @@
+MODULE regfile
+	SUBMODULE mux16bit8to1
+		INSTANCE XLXI_13
+	SUBMODULE mux16bit8to1
+		INSTANCE XLXI_14
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_10
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_11
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_4
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_5
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_6
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_7
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_8
+	SUBMODULE D_filp_flop_regwce
+		INSTANCE XLXI_9
+	SUBMODULE decoder_3t08
+		INSTANCE XLXI_18

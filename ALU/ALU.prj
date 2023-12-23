@@ -1,0 +1,4 @@
+vhdl work "fulladder.vhf"
+vhdl work "fulladder16bit.vhf"
+vhdl work "two_complement16bitadder.vhf"
+vhdl work "ALU.vhf"

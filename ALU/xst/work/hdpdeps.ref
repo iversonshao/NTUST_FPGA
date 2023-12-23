@@ -1,0 +1,79 @@
+V3 46
+FL /home/ise/NTUST_FPGA/ALU/ALU.vhf 2023/10/20.12:57:44 P.20131013
+EN work/NAND16_MXILINX_ALU 1697806664 FL /home/ise/NTUST_FPGA/ALU/ALU.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/NAND16_MXILINX_ALU/BEHAVIORAL 1697806665 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf EN work/NAND16_MXILINX_ALU 1697806664 \
+      CP MUXCY_L CP FMAP CP GND CP AND4 CP MUXCY CP VCC
+EN work/fulladder_MUSER_ALU 1697806666 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder_MUSER_ALU/BEHAVIORAL 1697806667 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf EN work/fulladder_MUSER_ALU 1697806666 \
+      CP XOR2 CP AND2 CP OR2
+EN work/fulladder16bit_MUSER_ALU 1697806668 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder16bit_MUSER_ALU/BEHAVIORAL 1697806669 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf EN work/fulladder16bit_MUSER_ALU 1697806668 \
+      CP fulladder_MUSER_ALU
+EN work/two_complement16bitadder_MUSER_ALU 1697806670 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/two_complement16bitadder_MUSER_ALU/BEHAVIORAL 1697806671 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf \
+      EN work/two_complement16bitadder_MUSER_ALU 1697806670 \
+      CP fulladder16bit_MUSER_ALU CP XOR2
+EN work/ALU 1697806672 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/ALU/BEHAVIORAL 1697806673 \
+      FL /home/ise/NTUST_FPGA/ALU/ALU.vhf EN work/ALU 1697806672 \
+      CP two_complement16bitadder_MUSER_ALU CP NAND16_MXILINX_ALU CP BUF CP XOR2 \
+      CP XNOR2 CP AND3
+FL /home/ise/NTUST_FPGA/ALU/fulladder.vhf 2023/10/20.12:29:52 P.20131013
+EN work/fulladder 1698050211 FL /home/ise/NTUST_FPGA/ALU/fulladder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder/BEHAVIORAL 1698050212 \
+      FL /home/ise/NTUST_FPGA/ALU/fulladder.vhf EN work/fulladder 1698050211 \
+      CP XOR2 CP AND2 CP OR2
+FL /home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf 2023/10/20.12:37:55 P.20131013
+EN work/fulladder_MUSER_fulladder16bit 1698050207 \
+      FL /home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder_MUSER_fulladder16bit/BEHAVIORAL 1698050208 \
+      FL /home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf \
+      EN work/fulladder_MUSER_fulladder16bit 1698050207 CP XOR2 CP AND2 CP OR2
+EN work/fulladder16bit 1698050209 \
+      FL /home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder16bit/BEHAVIORAL 1698050210 \
+      FL /home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf EN work/fulladder16bit 1698050209 \
+      CP fulladder_MUSER_fulladder16bit
+FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf 2023/10/20.12:37:55 P.20131013
+EN work/fulladder_MUSER_two_complement16bitadder 1697858827 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder_MUSER_two_complement16bitadder/BEHAVIORAL 1697858828 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      EN work/fulladder_MUSER_two_complement16bitadder 1697858827 CP XOR2 CP AND2 \
+      CP OR2
+EN work/fulladder16bit_MUSER_two_complement16bitadder 1697858829 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder16bit_MUSER_two_complement16bitadder/BEHAVIORAL 1697858830 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      EN work/fulladder16bit_MUSER_two_complement16bitadder 1697858829 \
+      CP fulladder_MUSER_two_complement16bitadder
+EN work/two_complement16bitadder 1697858831 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/two_complement16bitadder/BEHAVIORAL 1697858832 \
+      FL /home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf \
+      EN work/two_complement16bitadder 1697858831 \
+      CP fulladder16bit_MUSER_two_complement16bitadder CP XOR2

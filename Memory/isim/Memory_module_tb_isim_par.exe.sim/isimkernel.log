@@ -1,0 +1,30 @@
+Command line:
+   Memory_module_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Memory_module_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  34929
+
+Mon Nov 20 09:01:07 2023
+
+
+ Elaboration Time: 2.21 sec
+
+ Current Memory Usage: 308.941 Meg
+
+ Total Signals          : 25419
+ Total Nets             : 18200
+ Total Signal Drivers   : 14042
+ Total Blocks           : 8228
+ Total Primitive Blocks : 4247
+ Total Processes        : 14046
+ Total Traceable Variables  : 37424
+ Total Scalar Nets and Variables : 113468
+
+ Total Simulation Time: 2.47 sec
+
+ Current Memory Usage: 386.662 Meg
+
+Mon Nov 20 09:47:18 2023
+

@@ -1,0 +1,64 @@
+V3 44
+FL /home/ise/NTUST_FPGA/instruction_decoder/ALU_decoder.vhf 2023/10/25.11:00:51 P.20131013
+EN work/ALU_decoder 1698231648 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/ALU_decoder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ALU_decoder/BEHAVIORAL 1698231649 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/ALU_decoder.vhf \
+      EN work/ALU_decoder 1698231648 CP AND2B2 CP AND2B1 CP AND2 CP OR3 CP OR2
+FL /home/ise/NTUST_FPGA/instruction_decoder/Branchdetech.vhf 2023/10/25.10:40:26 P.20131013
+EN work/Branchdetech 1698397460 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/Branchdetech.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Branchdetech/BEHAVIORAL 1698397461 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/Branchdetech.vhf \
+      EN work/Branchdetech 1698397460 CP AND4B2 CP AND4B3 CP AND4B4 CP AND4B1 CP AND2
+FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder.vhf 2023/10/23.12:22:11 P.20131013
+EN work/fulladder 1698063731 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder/BEHAVIORAL 1698063732 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder.vhf EN work/fulladder 1698063731 \
+      CP XOR2 CP AND2 CP OR2
+FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf 2023/10/23.12:22:11 P.20131013
+EN work/fulladder_MUSER_fulladder2bit 1698063727 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder_MUSER_fulladder2bit/BEHAVIORAL 1698063728 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf \
+      EN work/fulladder_MUSER_fulladder2bit 1698063727 CP XOR2 CP AND2 CP OR2
+EN work/fulladder2bit 1698063729 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/fulladder2bit/BEHAVIORAL 1698063730 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf \
+      EN work/fulladder2bit 1698063729 CP fulladder_MUSER_fulladder2bit
+FL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf 2023/11/20.10:39:59 P.20131013
+EN work/OR9_MXILINX_main_decoder 1700476802 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR9_MXILINX_main_decoder/BEHAVIORAL 1700476803 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf \
+      EN work/OR9_MXILINX_main_decoder 1700476802 CP OR4 CP OR3 CP FMAP
+EN work/main_decoder 1700476804 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/main_decoder/BEHAVIORAL 1700476805 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf \
+      EN work/main_decoder 1700476804 CP AND5B5 CP AND5B4 CP AND5B3 CP AND5B2 \
+      CP AND5B1 CP OR5 CP OR2 CP OR9_MXILINX_main_decoder CP OR3 CP BUF
+FL /home/ise/NTUST_FPGA/instruction_decoder/test_decoder.vhf 2023/10/25.11:42:00 P.20131013
+EN work/test_decoder 1698234172 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/test_decoder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/test_decoder/BEHAVIORAL 1698234173 \
+      FL /home/ise/NTUST_FPGA/instruction_decoder/test_decoder.vhf \
+      EN work/test_decoder 1698234172 CP AND2B2 CP AND2B1 CP AND2

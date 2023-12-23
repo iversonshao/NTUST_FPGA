@@ -1,0 +1,30 @@
+Command line:
+   D_filp_flop_regwce_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /UUT/=netgen/par/D_filp_flop_regwce_timesim.sdf
+     -sdfroot  /UUT
+     -simrunnum  0
+     -socket  48229
+
+Fri Oct 20 12:10:01 2023
+
+
+ Elaboration Time: 0.23 sec
+
+ Current Memory Usage: 203.051 Meg
+
+ Total Signals          : 857
+ Total Nets             : 597
+ Total Signal Drivers   : 535
+ Total Blocks           : 265
+ Total Primitive Blocks : 145
+ Total Processes        : 539
+ Total Traceable Variables  : 1413
+ Total Scalar Nets and Variables : 7556
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 280.781 Meg
+
+Fri Oct 20 12:11:04 2023
+

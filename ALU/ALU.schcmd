@@ -1,0 +1,7 @@
+add instance acc16 1808 944 R0 -sn=1
+undo
+select figure at 84 522 8 -branches -sn=1
+select figure at 84 522 8 -branches -all -sn=1
+select figure at 1700 1263 8 -branches -sn=1
+select figure at 1700 1263 8 -branches -all -sn=1
+select figure at 1938 1121 8 -branches -sn=1

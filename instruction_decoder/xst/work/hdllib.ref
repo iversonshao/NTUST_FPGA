@@ -1,0 +1,16 @@
+AR test_decoder behavioral /home/ise/NTUST_FPGA/instruction_decoder/test_decoder.vhf sub00/vhpl15 1698234173
+AR alu_decoder behavioral /home/ise/NTUST_FPGA/instruction_decoder/ALU_decoder.vhf sub00/vhpl13 1698231649
+EN main_decoder NULL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf sub00/vhpl08 1700476804
+EN fulladder NULL /home/ise/NTUST_FPGA/instruction_decoder/fulladder.vhf sub00/vhpl04 1698063731
+EN alu_decoder NULL /home/ise/NTUST_FPGA/instruction_decoder/ALU_decoder.vhf sub00/vhpl12 1698231648
+EN fulladder2bit NULL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf sub00/vhpl02 1698063729
+EN or9_mxilinx_main_decoder NULL /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf sub00/vhpl06 1700476802
+AR main_decoder behavioral /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf sub00/vhpl09 1700476805
+EN branchdetech NULL /home/ise/NTUST_FPGA/instruction_decoder/Branchdetech.vhf sub00/vhpl10 1698397460
+AR fulladder_muser_fulladder2bit behavioral /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf sub00/vhpl01 1698063728
+EN test_decoder NULL /home/ise/NTUST_FPGA/instruction_decoder/test_decoder.vhf sub00/vhpl14 1698234172
+AR or9_mxilinx_main_decoder behavioral /home/ise/NTUST_FPGA/instruction_decoder/main_decoder.vhf sub00/vhpl07 1700476803
+EN fulladder_muser_fulladder2bit NULL /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf sub00/vhpl00 1698063727
+AR fulladder2bit behavioral /home/ise/NTUST_FPGA/instruction_decoder/fulladder2bit.vhf sub00/vhpl03 1698063730
+AR branchdetech behavioral /home/ise/NTUST_FPGA/instruction_decoder/Branchdetech.vhf sub00/vhpl11 1698397461
+AR fulladder behavioral /home/ise/NTUST_FPGA/instruction_decoder/fulladder.vhf sub00/vhpl05 1698063732

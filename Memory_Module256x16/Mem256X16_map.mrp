@@ -1,0 +1,796 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'Mem256X16'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o Mem256X16_map.ncd Mem256X16.ngd Mem256X16.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sat Oct 21 04:31:49 2023
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   24
+Logic Utilization:
+  Number of 4 input LUTs:                80 out of   1,920    4%
+Logic Distribution:
+  Number of occupied Slices:             40 out of     960    4%
+    Number of Slices containing only related logic:      40 out of      40 100%
+    Number of Slices containing unrelated logic:          0 out of      40   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          80 out of   1,920    4%
+  Number of bonded IOBs:                 18 out of      83   21%
+
+Average Fanout of Non-Clock Nets:                1.92
+
+Peak Memory Usage:  662 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:701 - Signal WEn connected to top level port WEn has been
+   removed.
+WARNING:MapLib:701 - Signal addr0 connected to top level port addr0 has been
+   removed.
+WARNING:MapLib:701 - Signal addr1 connected to top level port addr1 has been
+   removed.
+WARNING:MapLib:701 - Signal addr2 connected to top level port addr2 has been
+   removed.
+WARNING:MapLib:701 - Signal addr3 connected to top level port addr3 has been
+   removed.
+WARNING:MapLib:701 - Signal addr4 connected to top level port addr4 has been
+   removed.
+WARNING:MapLib:701 - Signal addr7 connected to top level port addr7 has been
+   removed.
+WARNING:MapLib:701 - Signal data<15> connected to top level port data<15> has
+   been removed.
+WARNING:MapLib:701 - Signal data<14> connected to top level port data<14> has
+   been removed.
+WARNING:MapLib:701 - Signal data<13> connected to top level port data<13> has
+   been removed.
+WARNING:MapLib:701 - Signal data<12> connected to top level port data<12> has
+   been removed.
+WARNING:MapLib:701 - Signal data<11> connected to top level port data<11> has
+   been removed.
+WARNING:MapLib:701 - Signal data<10> connected to top level port data<10> has
+   been removed.
+WARNING:MapLib:701 - Signal data<9> connected to top level port data<9> has been
+   removed.
+WARNING:MapLib:701 - Signal data<8> connected to top level port data<8> has been
+   removed.
+WARNING:MapLib:701 - Signal data<7> connected to top level port data<7> has been
+   removed.
+WARNING:MapLib:701 - Signal data<6> connected to top level port data<6> has been
+   removed.
+WARNING:MapLib:701 - Signal data<5> connected to top level port data<5> has been
+   removed.
+WARNING:MapLib:701 - Signal data<4> connected to top level port data<4> has been
+   removed.
+WARNING:MapLib:701 - Signal data<3> connected to top level port data<3> has been
+   removed.
+WARNING:MapLib:701 - Signal data<2> connected to top level port data<2> has been
+   removed.
+WARNING:MapLib:701 - Signal data<1> connected to top level port data<1> has been
+   removed.
+WARNING:MapLib:701 - Signal data<0> connected to top level port data<0> has been
+   removed.
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s100e' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 188 block(s) removed
+ 193 block(s) optimized away
+ 188 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "clk_BUFGP/BUFG" (CKBUF) removed.
+  The signal "clk_BUFGP" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_76<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_11/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_76<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_77<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_7/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_77<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_74<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_6/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_74<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_75<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_5/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_75<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_72<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_4/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_72<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_73<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_3/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_73<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_71<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_2/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_71<15>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<0>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<1>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<2>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<3>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<4>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<5>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<6>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_4/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<7>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<8>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S0/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<9>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<10>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S0/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<11>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<12>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S1/RAM32X2S0/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<13>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S0" (RAMS) removed.
+    The signal "XLXN_70<14>" is sourceless and has been removed.
+   Sourceless block "XLXI_1/XLXI_3/RAM32X4S1/RAM32X2S1/RAM32X1S1" (RAMS) removed.
+    The signal "XLXN_70<15>" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "WEn" is unused and has been removed.
+ Unused block "WEn" (PAD) removed.
+The signal "WEn_IBUF" is unused and has been removed.
+ Unused block "WEn_IBUF" (BUF) removed.
+The signal "XLXI_20/XLXN_85" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_27" (BUF) removed.
+The signal "XLXI_20/XLXN_86" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_26" (BUF) removed.
+The signal "XLXI_20/XLXN_87" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_25" (BUF) removed.
+  The signal "addr7_IBUF" is unused and has been removed.
+   Unused block "addr7_IBUF" (BUF) removed.
+    The signal "addr7" is unused and has been removed.
+     Unused block "addr7" (PAD) removed.
+The signal "XLXN_50" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_21" (AND) removed.
+The signal "XLXN_51" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_20" (AND) removed.
+The signal "XLXN_52" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_14" (AND) removed.
+The signal "XLXN_53" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_15" (AND) removed.
+The signal "XLXN_54" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_16" (AND) removed.
+The signal "XLXN_55" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_17" (AND) removed.
+The signal "XLXN_56" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_18" (AND) removed.
+The signal "XLXN_57" is unused and has been removed.
+ Unused block "XLXI_20/XLXI_19" (AND) removed.
+The signal "addr0" is unused and has been removed.
+ Unused block "addr0" (PAD) removed.
+The signal "addr0_IBUF" is unused and has been removed.
+ Unused block "addr0_IBUF" (BUF) removed.
+The signal "addr1" is unused and has been removed.
+ Unused block "addr1" (PAD) removed.
+The signal "addr1_IBUF" is unused and has been removed.
+ Unused block "addr1_IBUF" (BUF) removed.
+The signal "addr2" is unused and has been removed.
+ Unused block "addr2" (PAD) removed.
+The signal "addr2_IBUF" is unused and has been removed.
+ Unused block "addr2_IBUF" (BUF) removed.
+The signal "addr3" is unused and has been removed.
+ Unused block "addr3" (PAD) removed.
+The signal "addr3_IBUF" is unused and has been removed.
+ Unused block "addr3_IBUF" (BUF) removed.
+The signal "addr4" is unused and has been removed.
+ Unused block "addr4" (PAD) removed.
+The signal "addr4_IBUF" is unused and has been removed.
+ Unused block "addr4_IBUF" (BUF) removed.
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+The signal "data<0>" is unused and has been removed.
+ Unused block "data<0>" (PAD) removed.
+The signal "data<10>" is unused and has been removed.
+ Unused block "data<10>" (PAD) removed.
+The signal "data<11>" is unused and has been removed.
+ Unused block "data<11>" (PAD) removed.
+The signal "data<12>" is unused and has been removed.
+ Unused block "data<12>" (PAD) removed.
+The signal "data<13>" is unused and has been removed.
+ Unused block "data<13>" (PAD) removed.
+The signal "data<14>" is unused and has been removed.
+ Unused block "data<14>" (PAD) removed.
+The signal "data<15>" is unused and has been removed.
+ Unused block "data<15>" (PAD) removed.
+The signal "data<1>" is unused and has been removed.
+ Unused block "data<1>" (PAD) removed.
+The signal "data<2>" is unused and has been removed.
+ Unused block "data<2>" (PAD) removed.
+The signal "data<3>" is unused and has been removed.
+ Unused block "data<3>" (PAD) removed.
+The signal "data<4>" is unused and has been removed.
+ Unused block "data<4>" (PAD) removed.
+The signal "data<5>" is unused and has been removed.
+ Unused block "data<5>" (PAD) removed.
+The signal "data<6>" is unused and has been removed.
+ Unused block "data<6>" (PAD) removed.
+The signal "data<7>" is unused and has been removed.
+ Unused block "data<7>" (PAD) removed.
+The signal "data<8>" is unused and has been removed.
+ Unused block "data<8>" (PAD) removed.
+The signal "data<9>" is unused and has been removed.
+ Unused block "data<9>" (PAD) removed.
+The signal "data_0_IBUF" is unused and has been removed.
+ Unused block "data_0_IBUF" (BUF) removed.
+The signal "data_10_IBUF" is unused and has been removed.
+ Unused block "data_10_IBUF" (BUF) removed.
+The signal "data_11_IBUF" is unused and has been removed.
+ Unused block "data_11_IBUF" (BUF) removed.
+The signal "data_12_IBUF" is unused and has been removed.
+ Unused block "data_12_IBUF" (BUF) removed.
+The signal "data_13_IBUF" is unused and has been removed.
+ Unused block "data_13_IBUF" (BUF) removed.
+The signal "data_14_IBUF" is unused and has been removed.
+ Unused block "data_14_IBUF" (BUF) removed.
+The signal "data_15_IBUF" is unused and has been removed.
+ Unused block "data_15_IBUF" (BUF) removed.
+The signal "data_1_IBUF" is unused and has been removed.
+ Unused block "data_1_IBUF" (BUF) removed.
+The signal "data_2_IBUF" is unused and has been removed.
+ Unused block "data_2_IBUF" (BUF) removed.
+The signal "data_3_IBUF" is unused and has been removed.
+ Unused block "data_3_IBUF" (BUF) removed.
+The signal "data_4_IBUF" is unused and has been removed.
+ Unused block "data_4_IBUF" (BUF) removed.
+The signal "data_5_IBUF" is unused and has been removed.
+ Unused block "data_5_IBUF" (BUF) removed.
+The signal "data_6_IBUF" is unused and has been removed.
+ Unused block "data_6_IBUF" (BUF) removed.
+The signal "data_7_IBUF" is unused and has been removed.
+ Unused block "data_7_IBUF" (BUF) removed.
+The signal "data_8_IBUF" is unused and has been removed.
+ Unused block "data_8_IBUF" (BUF) removed.
+The signal "data_9_IBUF" is unused and has been removed.
+ Unused block "data_9_IBUF" (BUF) removed.
+Unused block "clk_BUFGP/IBUFG" (CKBUF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+AND3 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_6/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_6/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_7/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_7/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_8/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_8/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_9/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_1/XLXI_9/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_6/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_6/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_7/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_7/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_8/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_8/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_9/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_2/XLXI_9/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_6/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_6/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_7/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_7/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_8/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_8/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_9/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_3/XLXI_9/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_6/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_6/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_7/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_7/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_8/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_8/XLXI_2/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_9/XLXI_1/I_M23/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M01/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M01/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M01/I_36_38
+AND3 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M23/I_36_30
+AND3B1 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M23/I_36_31
+OR2 		XLXI_21/XLXI_4/XLXI_9/XLXI_2/I_M23/I_36_38
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| addr5                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| addr6                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| qout<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<2>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<3>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<4>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<5>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<6>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<7>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<8>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<9>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<10>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<11>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<12>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<13>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<14>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| qout<15>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

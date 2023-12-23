@@ -1,0 +1,28 @@
+Command line:
+   D_filp_flop_regwce_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  39446
+
+Fri Oct 20 12:11:57 2023
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 198.865 Meg
+
+ Total Signals          : 123
+ Total Nets             : 104
+ Total Signal Drivers   : 41
+ Total Blocks           : 22
+ Total Primitive Blocks : 20
+ Total Processes        : 44
+ Total Traceable Variables  : 50
+ Total Scalar Nets and Variables : 701
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 276.464 Meg
+
+Fri Oct 20 12:12:37 2023
+

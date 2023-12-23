@@ -1,0 +1,4 @@
+vhdl work "/home/ise/NTUST_FPGA/ALU/fulladder.vhf"
+vhdl work "/home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf"
+vhdl work "/home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf"
+vhdl work "/home/ise/NTUST_FPGA/ALU/ALU.vhf"

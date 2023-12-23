@@ -1,0 +1,39 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib simprims_ver -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb_isim_par.exe -prj /home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb_par.prj RISCV16bit_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "/home/ise/NTUST_FPGA/RISCV16bit/netgen/par/RISCV16bit_timesim.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 146276 KB
+Fuse CPU Usage: 1140 ms
+Compiling module RISCV16bit_tb
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_lut4_v of entity X_LUT4 [\X_LUT4(true,true,"UNPLACED",(0,...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_bufgmux_v of entity X_BUFGMUX [\X_BUFGMUX(true,"*",true,false,"...]
+Compiling architecture x_inv_v of entity X_INV [\X_INV(true,true,"BUFGMUX_X2Y10"...]
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity RISCV16bit [riscv16bit_default]
+Time Resolution for simulation is 1ps.
+Compiled 505 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable /home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb_isim_par.exe
+Fuse Memory Usage: 167320 KB
+Fuse CPU Usage: 3250 ms
+GCC CPU Usage: 1070 ms

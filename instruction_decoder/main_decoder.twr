@@ -1,0 +1,130 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml main_decoder.twx main_decoder.ncd -o main_decoder.twr
+main_decoder.pcf
+
+Design file:              main_decoder.ncd
+Physical constraint file: main_decoder.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Opcode<11>     |ALUOp          |    8.651|
+Opcode<11>     |ALUSrc1        |    7.957|
+Opcode<11>     |ALUSrc2_10     |    8.203|
+Opcode<11>     |ALUsrc2_01     |    8.701|
+Opcode<11>     |Branch         |    7.647|
+Opcode<11>     |JarSrc         |    8.869|
+Opcode<11>     |Jump           |    7.372|
+Opcode<11>     |MemWrite       |    7.385|
+Opcode<11>     |RegDst         |    7.393|
+Opcode<11>     |RegWrite       |   11.112|
+Opcode<11>     |ResultSrc      |    7.344|
+Opcode<11>     |Test           |    6.006|
+Opcode<11>     |WirteSrc2_10   |    9.167|
+Opcode<11>     |WriteSrc1_01   |    8.572|
+Opcode<12>     |ALUOp          |    8.480|
+Opcode<12>     |ALUSrc1        |    8.047|
+Opcode<12>     |ALUSrc2_10     |    8.293|
+Opcode<12>     |ALUsrc2_01     |    8.721|
+Opcode<12>     |Branch         |    7.616|
+Opcode<12>     |JarSrc         |    8.565|
+Opcode<12>     |Jump           |    7.201|
+Opcode<12>     |MemWrite       |    7.475|
+Opcode<12>     |RegDst         |    7.483|
+Opcode<12>     |RegWrite       |   10.856|
+Opcode<12>     |ResultSrc      |    7.407|
+Opcode<12>     |Test           |    6.289|
+Opcode<12>     |WirteSrc2_10   |    9.169|
+Opcode<12>     |WriteSrc1_01   |    8.343|
+Opcode<13>     |ALUOp          |    8.942|
+Opcode<13>     |ALUSrc1        |    8.007|
+Opcode<13>     |ALUSrc2_10     |    8.253|
+Opcode<13>     |ALUsrc2_01     |    9.089|
+Opcode<13>     |Branch         |    7.863|
+Opcode<13>     |JarSrc         |    8.697|
+Opcode<13>     |Jump           |    7.663|
+Opcode<13>     |MemWrite       |    7.434|
+Opcode<13>     |RegDst         |    7.442|
+Opcode<13>     |RegWrite       |   10.940|
+Opcode<13>     |ResultSrc      |    7.924|
+Opcode<13>     |Test           |    6.982|
+Opcode<13>     |WirteSrc2_10   |    9.052|
+Opcode<13>     |WriteSrc1_01   |    8.400|
+Opcode<14>     |ALUOp          |    8.812|
+Opcode<14>     |ALUSrc1        |    7.998|
+Opcode<14>     |ALUSrc2_10     |    8.244|
+Opcode<14>     |ALUsrc2_01     |    8.641|
+Opcode<14>     |Branch         |    7.655|
+Opcode<14>     |JarSrc         |    8.832|
+Opcode<14>     |Jump           |    7.533|
+Opcode<14>     |MemWrite       |    7.499|
+Opcode<14>     |RegDst         |    7.507|
+Opcode<14>     |RegWrite       |   11.036|
+Opcode<14>     |ResultSrc      |    7.587|
+Opcode<14>     |Test           |    6.459|
+Opcode<14>     |WirteSrc2_10   |    9.518|
+Opcode<14>     |WriteSrc1_01   |    8.496|
+Opcode<15>     |ALUOp          |    9.779|
+Opcode<15>     |ALUSrc1        |    8.233|
+Opcode<15>     |ALUSrc2_10     |    8.479|
+Opcode<15>     |ALUsrc2_01     |    9.445|
+Opcode<15>     |Branch         |    7.992|
+Opcode<15>     |JarSrc         |    8.649|
+Opcode<15>     |Jump           |    8.500|
+Opcode<15>     |MemWrite       |    7.556|
+Opcode<15>     |RegDst         |    7.564|
+Opcode<15>     |RegWrite       |   10.979|
+Opcode<15>     |ResultSrc      |    7.912|
+Opcode<15>     |Test           |    7.132|
+Opcode<15>     |WirteSrc2_10   |    9.505|
+Opcode<15>     |WriteSrc1_01   |    8.466|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 25 11:56:17 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 333 MB
+
+
+

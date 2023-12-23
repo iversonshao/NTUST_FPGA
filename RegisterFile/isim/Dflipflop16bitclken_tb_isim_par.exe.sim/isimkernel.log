@@ -1,0 +1,30 @@
+Command line:
+   Dflipflop16bitclken_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Dflipflop16bitclken_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  39580
+
+Fri Nov 17 10:35:28 2023
+
+
+ Elaboration Time: 0.32 sec
+
+ Current Memory Usage: 206.377 Meg
+
+ Total Signals          : 2037
+ Total Nets             : 1374
+ Total Signal Drivers   : 1037
+ Total Blocks           : 343
+ Total Primitive Blocks : 193
+ Total Processes        : 1058
+ Total Traceable Variables  : 2439
+ Total Scalar Nets and Variables : 17344
+
+ Total Simulation Time: 0.34 sec
+
+ Current Memory Usage: 284.103 Meg
+
+Fri Nov 17 10:37:04 2023
+

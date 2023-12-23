@@ -1,0 +1,3 @@
+vhdl work "netgen/par/mux4X4bit8to1_timesim.vhd"
+verilog work "mux4X4bit8to1_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

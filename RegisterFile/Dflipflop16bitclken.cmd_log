@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.syr" 
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.syr" 
+netgen -intstyle ise -ar Structure -tm Dflipflop16bitclken -w -dir netgen/synthesis -ofmt vhdl -sim Dflipflop16bitclken.ngc Dflipflop16bitclken_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I Dflipflop16bitclken.ngc Dflipflop16bitclken.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Dflipflop16bitclken_map.ncd Dflipflop16bitclken.ngd Dflipflop16bitclken.pcf 
+par -w -intstyle ise -ol high -mt off Dflipflop16bitclken_map.ncd Dflipflop16bitclken.ncd Dflipflop16bitclken.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml Dflipflop16bitclken.twx Dflipflop16bitclken.ncd -o Dflipflop16bitclken.twr Dflipflop16bitclken.pcf 
+netgen -intstyle ise -s 2I  -pcf Dflipflop16bitclken.pcf -rpw 100 -tpw 0 -ar Structure -tm Dflipflop16bitclken -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim Dflipflop16bitclken.ncd Dflipflop16bitclken_timesim.vhd 
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/Dflipflop16bitclken.syr" 

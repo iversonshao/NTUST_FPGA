@@ -1,0 +1,44 @@
+V3 20
+FL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf 2023/10/21.06:54:39 P.20131013
+EN work/FD16RE_MXILINX_counter16bit 1697871507 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD16RE_MXILINX_counter16bit/BEHAVIORAL 1697871508 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf \
+      EN work/FD16RE_MXILINX_counter16bit 1697871507 CP FDRE
+EN work/counter16bit 1697871509 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/counter16bit/BEHAVIORAL 1697871510 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf EN work/counter16bit 1697871509 \
+      CP FD16RE_MXILINX_counter16bit
+FL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf 2023/10/21.07:01:56 P.20131013
+EN work/FD16RE_MXILINX_PC 1697871882 FL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD16RE_MXILINX_PC/BEHAVIORAL 1697871883 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf EN work/FD16RE_MXILINX_PC 1697871882 \
+      CP FDRE
+EN work/PC 1697871884 FL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/PC/BEHAVIORAL 1697871885 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf EN work/PC 1697871884 \
+      CP FD16RE_MXILINX_PC
+FL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf 2023/10/21.06:51:01 P.20131013
+EN work/FD16RE_MXILINX_PC_Circuitry 1697871059 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD16RE_MXILINX_PC_Circuitry/BEHAVIORAL 1697871060 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf \
+      EN work/FD16RE_MXILINX_PC_Circuitry 1697871059 CP FDRE
+EN work/PC_Circuitry 1697871061 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/PC_Circuitry/BEHAVIORAL 1697871062 \
+      FL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf EN work/PC_Circuitry 1697871061 \
+      CP FD16RE_MXILINX_PC_Circuitry

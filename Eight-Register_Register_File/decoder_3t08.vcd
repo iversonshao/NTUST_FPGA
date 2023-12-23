@@ -1,0 +1,148 @@
+$date
+   Fri Oct 20 03:35:02 2023
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module decoder_3t08_tb $end
+$var wire 1 ! R0 $end
+$var wire 1 " R1 $end
+$var wire 1 # R2 $end
+$var wire 1 $ R3 $end
+$var wire 1 % R4 $end
+$var wire 1 & R5 $end
+$var wire 1 ' R6 $end
+$var wire 1 ( R7 $end
+$var reg 1 ) A2 $end
+$var reg 1 * A1 $end
+$var reg 1 + A0 $end
+$var reg 1 , Enable $end
+$scope module UUT $end
+$var wire 1 i a0 $end
+$var wire 1 g a1 $end
+$var wire 1 e a2 $end
+$var wire 1 ` enable $end
+$var wire 1 _ r0 $end
+$var wire 1 Z r1 $end
+$var wire 1 < r2 $end
+$var wire 1 A r3 $end
+$var wire 1 F r4 $end
+$var wire 1 K r5 $end
+$var wire 1 P r6 $end
+$var wire 1 U r7 $end
+$var wire 1 h xlxn_85 $end
+$var wire 1 f xlxn_86 $end
+$var wire 1 d xlxn_87 $end
+$scope module XLXI_14 $end
+$var wire 1 < o $end
+$var wire 1 ` i0 $end
+$var wire 1 i i1 $end
+$var wire 1 g i2 $end
+$var wire 1 d i3 $end
+$upscope $end
+$scope module XLXI_15 $end
+$var wire 1 A o $end
+$var wire 1 ` i0 $end
+$var wire 1 i i1 $end
+$var wire 1 g i2 $end
+$var wire 1 d i3 $end
+$upscope $end
+$scope module XLXI_16 $end
+$var wire 1 F o $end
+$var wire 1 ` i0 $end
+$var wire 1 h i1 $end
+$var wire 1 f i2 $end
+$var wire 1 e i3 $end
+$upscope $end
+$scope module XLXI_17 $end
+$var wire 1 K o $end
+$var wire 1 ` i0 $end
+$var wire 1 i i1 $end
+$var wire 1 f i2 $end
+$var wire 1 e i3 $end
+$upscope $end
+$scope module XLXI_18 $end
+$var wire 1 P o $end
+$var wire 1 ` i0 $end
+$var wire 1 h i1 $end
+$var wire 1 g i2 $end
+$var wire 1 e i3 $end
+$upscope $end
+$scope module XLXI_19 $end
+$var wire 1 U o $end
+$var wire 1 ` i0 $end
+$var wire 1 i i1 $end
+$var wire 1 g i2 $end
+$var wire 1 e i3 $end
+$upscope $end
+$scope module XLXI_20 $end
+$var wire 1 Z o $end
+$var wire 1 ` i0 $end
+$var wire 1 i i1 $end
+$var wire 1 f i2 $end
+$var wire 1 d i3 $end
+$upscope $end
+$scope module XLXI_21 $end
+$var wire 1 _ o $end
+$var wire 1 ` i0 $end
+$var wire 1 h i1 $end
+$var wire 1 f i2 $end
+$var wire 1 d i3 $end
+$upscope $end
+$scope module XLXI_25 $end
+$var wire 1 d o $end
+$var wire 1 e i $end
+$upscope $end
+$scope module XLXI_26 $end
+$var wire 1 f o $end
+$var wire 1 g i $end
+$upscope $end
+$scope module XLXI_27 $end
+$var wire 1 h o $end
+$var wire 1 i i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1i
+0g
+0e
+0`
+0_
+0Z
+0<
+0A
+0F
+0K
+0P
+0U
+0)
+0*
+1+
+0,
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0h
+1f
+1d
+$end
+#10000
+0i
+1g
+1`
+1*
+0+
+1,
+1h
+0f

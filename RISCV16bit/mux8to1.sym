@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="mux8to1">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2023-10-8T19:1:6</timestamp>
+    <pin polarity="Input" x="112" y="0" name="A0" />
+    <pin polarity="Input" x="96" y="0" name="A1" />
+    <pin polarity="Input" x="0" y="-96" name="A2" />
+    <pin polarity="Input" x="0" y="-112" name="A3" />
+    <pin polarity="Input" x="0" y="-128" name="A4" />
+    <pin polarity="Input" x="0" y="-144" name="A5" />
+    <pin polarity="Input" x="0" y="-160" name="A6" />
+    <pin polarity="Input" x="0" y="-176" name="A7" />
+    <pin polarity="Input" x="160" y="0" name="S0" />
+    <pin polarity="Input" x="144" y="0" name="S1" />
+    <pin polarity="Input" x="128" y="0" name="S2" />
+    <pin polarity="Output" x="272" y="-176" name="Y" />
+    <graph>
+        <rect width="144" x="64" y="-208" height="144" />
+        <attrtext style="alignment:CENTER;fontsize:20;fontname:Arial" attrname="SymbolName" x="136" y="-136" type="symbol" />
+        <line x2="112" y1="-64" y2="0" x1="112" />
+        <attrtext style="alignment:VLEFT" attrname="PinName" x="112" y="-72" type="pin A0" />
+        <line x2="96" y1="-64" y2="0" x1="96" />
+        <attrtext style="alignment:VLEFT" attrname="PinName" x="96" y="-72" type="pin A1" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-96" type="pin A2" />
+        <line x2="0" y1="-112" y2="-112" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-112" type="pin A3" />
+        <line x2="0" y1="-128" y2="-128" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-128" type="pin A4" />
+        <line x2="0" y1="-144" y2="-144" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-144" type="pin A5" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-160" type="pin A6" />
+        <line x2="0" y1="-176" y2="-176" x1="64" />
+        <attrtext attrname="PinName" x="72" y="-176" type="pin A7" />
+        <line x2="160" y1="-64" y2="0" x1="160" />
+        <attrtext style="alignment:VLEFT" attrname="PinName" x="160" y="-72" type="pin S0" />
+        <line x2="144" y1="-64" y2="0" x1="144" />
+        <attrtext style="alignment:VLEFT" attrname="PinName" x="144" y="-72" type="pin S1" />
+        <line x2="128" y1="-64" y2="0" x1="128" />
+        <attrtext style="alignment:VLEFT" attrname="PinName" x="128" y="-72" type="pin S2" />
+        <line x2="272" y1="-176" y2="-176" x1="208" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="200" y="-176" type="pin Y" />
+    </graph>
+</symbol>

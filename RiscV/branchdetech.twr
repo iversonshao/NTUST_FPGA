@@ -1,0 +1,190 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml branchdetech.twx branchdetech.ncd -o branchdetech.twr
+branchdetech.pcf
+
+Design file:              branchdetech.ncd
+Physical constraint file: branchdetech.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock funct<8>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+C0          |    0.651(F)|    0.964(F)|bccout_cmp_eq0000 |   0.000|
+C1          |    0.930(F)|    0.748(F)|b1                |   0.000|
+Z0          |    0.848(F)|    1.113(F)|b2                |   0.000|
+Z1          |    0.681(F)|    1.063(F)|b3                |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock funct<9>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+C0          |    0.656(F)|    0.958(F)|bccout_cmp_eq0000 |   0.000|
+C1          |    1.186(F)|    0.429(F)|b1                |   0.000|
+Z0          |    1.056(F)|    0.854(F)|b2                |   0.000|
+Z1          |    0.734(F)|    0.997(F)|b3                |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock funct<10>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+C0          |    0.835(F)|    0.734(F)|bccout_cmp_eq0000 |   0.000|
+C1          |    1.414(F)|    0.143(F)|b1                |   0.000|
+Z0          |    1.312(F)|    0.533(F)|b2                |   0.000|
+Z1          |    0.885(F)|    0.808(F)|b3                |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock funct<11>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+C0          |    0.357(F)|    1.331(F)|bccout_cmp_eq0000 |   0.000|
+C1          |    1.118(F)|    0.513(F)|b1                |   0.000|
+Z0          |    0.984(F)|    0.943(F)|b2                |   0.000|
+Z1          |    0.439(F)|    1.365(F)|b3                |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock funct<8> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+BAL         |    7.727(F)|BAL_cmp_eq0000    |   0.000|
+bccout      |    6.580(F)|bccout_cmp_eq0000 |   0.000|
+bcsout      |    6.602(F)|b1                |   0.000|
+beqout      |    6.918(F)|b3                |   0.000|
+bneout      |    7.431(F)|b2                |   0.000|
+------------+------------+------------------+--------+
+
+Clock funct<9> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+BAL         |    6.819(F)|BAL_cmp_eq0000    |   0.000|
+bccout      |    6.574(F)|bccout_cmp_eq0000 |   0.000|
+bcsout      |    6.283(F)|b1                |   0.000|
+beqout      |    6.852(F)|b3                |   0.000|
+bneout      |    7.172(F)|b2                |   0.000|
+------------+------------+------------------+--------+
+
+Clock funct<10> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+BAL         |    7.074(F)|BAL_cmp_eq0000    |   0.000|
+bccout      |    6.350(F)|bccout_cmp_eq0000 |   0.000|
+bcsout      |    5.997(F)|b1                |   0.000|
+beqout      |    6.663(F)|b3                |   0.000|
+bneout      |    6.851(F)|b2                |   0.000|
+------------+------------+------------------+--------+
+
+Clock funct<11> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+BAL         |    7.816(F)|BAL_cmp_eq0000    |   0.000|
+bccout      |    6.947(F)|bccout_cmp_eq0000 |   0.000|
+bcsout      |    6.367(F)|b1                |   0.000|
+beqout      |    7.220(F)|b3                |   0.000|
+bneout      |    7.261(F)|b2                |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock funct<8>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+funct<8>       |         |         |    1.432|    1.432|
+funct<9>       |         |         |    2.256|    2.256|
+funct<10>      |         |         |    2.067|    2.067|
+funct<11>      |         |         |    2.624|    2.624|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock funct<9>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+funct<8>       |         |         |    2.129|    2.129|
+funct<9>       |         |         |    2.361|    2.361|
+funct<10>      |         |         |    2.172|    2.172|
+funct<11>      |         |         |    2.729|    2.729|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock funct<10>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+funct<8>       |         |         |    1.926|    1.926|
+funct<9>       |         |         |    2.589|    2.589|
+funct<10>      |         |         |    2.400|    2.400|
+funct<11>      |         |         |    2.957|    2.957|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock funct<11>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+funct<8>       |         |         |    1.486|    1.486|
+funct<9>       |         |         |    2.293|    2.293|
+funct<10>      |         |         |    2.104|    2.104|
+funct<11>      |         |         |    2.661|    2.661|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Nov 24 09:07:51 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 334 MB
+
+
+

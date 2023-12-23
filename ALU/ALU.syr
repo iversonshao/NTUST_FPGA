@@ -1,0 +1,375 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/NTUST_FPGA/ALU/ALU.vhf" in Library work.
+Entity <NAND16_MXILINX_ALU> compiled.
+Entity <NAND16_MXILINX_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <fulladder_MUSER_ALU> compiled.
+Entity <fulladder_MUSER_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <fulladder16bit_MUSER_ALU> compiled.
+Entity <fulladder16bit_MUSER_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <two_complement16bitadder_MUSER_ALU> compiled.
+Entity <two_complement16bitadder_MUSER_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <ALU> compiled.
+Entity <ALU> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "/home/ise/NTUST_FPGA/ALU/two_complement16bitadder.vhf" in Library work.
+Architecture behavioral of Entity fulladder_muser_two_complement16bitadder is up to date.
+Architecture behavioral of Entity fulladder16bit_muser_two_complement16bitadder is up to date.
+Architecture behavioral of Entity two_complement16bitadder is up to date.
+Compiling vhdl file "/home/ise/NTUST_FPGA/ALU/fulladder16bit.vhf" in Library work.
+Architecture behavioral of Entity fulladder_muser_fulladder16bit is up to date.
+Architecture behavioral of Entity fulladder16bit is up to date.
+Compiling vhdl file "/home/ise/NTUST_FPGA/ALU/fulladder.vhf" in Library work.
+Architecture behavioral of Entity fulladder is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <two_complement16bitadder_MUSER_ALU> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <NAND16_MXILINX_ALU> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <fulladder16bit_MUSER_ALU> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <fulladder_MUSER_ALU> in library <work> (architecture <BEHAVIORAL>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "/home/ise/NTUST_FPGA/ALU/ALU.vhf" line 638: Unconnected output port 'cout' of component 'two_complement16bitadder_MUSER_ALU'.
+WARNING:Xst:753 - "/home/ise/NTUST_FPGA/ALU/ALU.vhf" line 638: Unconnected output port 'S' of component 'two_complement16bitadder_MUSER_ALU'.
+    Set user-defined property "HU_SET =  XLXI_4_0" for instance <XLXI_4> in unit <ALU>.
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <two_complement16bitadder_MUSER_ALU> in library <work> (Architecture <BEHAVIORAL>).
+Entity <two_complement16bitadder_MUSER_ALU> analyzed. Unit <two_complement16bitadder_MUSER_ALU> generated.
+
+Analyzing Entity <fulladder16bit_MUSER_ALU> in library <work> (Architecture <BEHAVIORAL>).
+Entity <fulladder16bit_MUSER_ALU> analyzed. Unit <fulladder16bit_MUSER_ALU> generated.
+
+Analyzing Entity <fulladder_MUSER_ALU> in library <work> (Architecture <BEHAVIORAL>).
+Entity <fulladder_MUSER_ALU> analyzed. Unit <fulladder_MUSER_ALU> generated.
+
+Analyzing Entity <NAND16_MXILINX_ALU> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_2> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_129> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_142> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_147> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_165> in unit <NAND16_MXILINX_ALU>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_170> in unit <NAND16_MXILINX_ALU>.
+Entity <NAND16_MXILINX_ALU> analyzed. Unit <NAND16_MXILINX_ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <NAND16_MXILINX_ALU>.
+    Related source file is "/home/ise/NTUST_FPGA/ALU/ALU.vhf".
+Unit <NAND16_MXILINX_ALU> synthesized.
+
+
+Synthesizing Unit <fulladder_MUSER_ALU>.
+    Related source file is "/home/ise/NTUST_FPGA/ALU/ALU.vhf".
+Unit <fulladder_MUSER_ALU> synthesized.
+
+
+Synthesizing Unit <fulladder16bit_MUSER_ALU>.
+    Related source file is "/home/ise/NTUST_FPGA/ALU/ALU.vhf".
+Unit <fulladder16bit_MUSER_ALU> synthesized.
+
+
+Synthesizing Unit <two_complement16bitadder_MUSER_ALU>.
+    Related source file is "/home/ise/NTUST_FPGA/ALU/ALU.vhf".
+Unit <two_complement16bitadder_MUSER_ALU> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "/home/ise/NTUST_FPGA/ALU/ALU.vhf".
+WARNING:Xst:647 - Input <M> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <cout_DUMMY> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXI_2_M_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <S_DUMMY> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <ALU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <NAND16_MXILINX_ALU> ...
+
+Optimizing unit <fulladder16bit_MUSER_ALU> ...
+
+Optimizing unit <two_complement16bitadder_MUSER_ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 54
+
+Cell Usage :
+# BELS                             : 112
+#      AND2                        : 32
+#      AND3                        : 1
+#      AND4                        : 4
+#      BUF                         : 2
+#      GND                         : 2
+#      MUXCY                       : 1
+#      MUXCY_L                     : 3
+#      OR2                         : 16
+#      VCC                         : 1
+#      XNOR2                       : 1
+#      XOR2                        : 49
+# IO Buffers                       : 53
+#      IBUF                        : 32
+#      OBUF                        : 21
+# Others                           : 4
+#      FMAP                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                          54
+ Number of bonded IOBs:                  53  out of     83    63%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.269ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Delay:               7.269ns (Levels of Logic = 4)
+  Source:            A<15> (PAD)
+  Destination:       V (PAD)
+
+  Data Path: A<15> to V
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.531  A_15_IBUF (A_15_IBUF)
+     XNOR2:I0->O           1   0.704   0.420  XLXI_9 (XLXN_89)
+     AND3:I0->O            1   0.704   0.420  XLXI_10 (V_OBUF)
+     OBUF:I->O                 3.272          V_OBUF (V)
+    ----------------------------------------
+    Total                      7.269ns (5.898ns logic, 1.371ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> 
+
+
+Total memory usage is 622220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

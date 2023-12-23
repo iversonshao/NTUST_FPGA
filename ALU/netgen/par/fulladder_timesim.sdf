@@ -1,0 +1,122 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "fulladder")
+  (DATE "Fri Oct 20 12:32:50 2023")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (VOLTAGE 1.14)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE cin_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 100 )( 100 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE cin_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1199 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE A_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 100 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE A_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1199 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE B_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 100 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE B_IFF_IMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1199 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE cout_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 599 ))
+          (IOPATH I O ( 2068 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE S_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 599 ))
+          (IOPATH I O ( 2068 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE XLXI_2)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR1 ( 625 ))
+          (PORT ADR2 ( 605 ))
+          (PORT ADR3 ( 574 ))
+          (IOPATH ADR0 O ( 559 )( 559 ))
+          (IOPATH ADR1 O ( 559 )( 559 ))
+          (IOPATH ADR2 O ( 559 )( 559 ))
+          (IOPATH ADR3 O ( 559 )( 559 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT4")
+    (INSTANCE XLXI_5)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR1 ( 649 ))
+          (PORT ADR2 ( 571 ))
+          (PORT ADR3 ( 571 ))
+          (IOPATH ADR0 O ( 559 )( 559 ))
+          (IOPATH ADR1 O ( 559 )( 559 ))
+          (IOPATH ADR2 O ( 559 )( 559 ))
+          (IOPATH ADR3 O ( 559 )( 559 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE cout_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1026 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE S_OUTPUT_OFF_OMUX)
+      (DELAY
+        (ABSOLUTE
+          (IOPATH I O ( 1006 ))
+        )
+      )
+  )
+)

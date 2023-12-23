@@ -1,0 +1,324 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'mux4X4bit8to1'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o mux4X4bit8to1_map.ncd mux4X4bit8to1.ngd mux4X4bit8to1.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sat Oct 21 02:48:52 2023
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s100e' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal S2 connected to top level port S2 has been removed.
+WARNING:MapLib:701 - Signal A0<15> connected to top level port A0<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<14> connected to top level port A0<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<13> connected to top level port A0<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<12> connected to top level port A0<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<11> connected to top level port A0<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<10> connected to top level port A0<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<9> connected to top level port A0<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<8> connected to top level port A0<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<7> connected to top level port A0<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<6> connected to top level port A0<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<5> connected to top level port A0<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<4> connected to top level port A0<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<3> connected to top level port A0<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<2> connected to top level port A0<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<1> connected to top level port A0<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A0<0> connected to top level port A0<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<15> connected to top level port A1<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<14> connected to top level port A1<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<13> connected to top level port A1<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<12> connected to top level port A1<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<11> connected to top level port A1<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<10> connected to top level port A1<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<9> connected to top level port A1<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<8> connected to top level port A1<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<7> connected to top level port A1<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<6> connected to top level port A1<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<5> connected to top level port A1<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<4> connected to top level port A1<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<3> connected to top level port A1<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<2> connected to top level port A1<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<1> connected to top level port A1<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A1<0> connected to top level port A1<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<15> connected to top level port A2<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<14> connected to top level port A2<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<13> connected to top level port A2<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<12> connected to top level port A2<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<11> connected to top level port A2<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<10> connected to top level port A2<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<9> connected to top level port A2<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<8> connected to top level port A2<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<7> connected to top level port A2<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<6> connected to top level port A2<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<5> connected to top level port A2<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<4> connected to top level port A2<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<3> connected to top level port A2<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<2> connected to top level port A2<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<1> connected to top level port A2<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A2<0> connected to top level port A2<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<15> connected to top level port A3<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<14> connected to top level port A3<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<13> connected to top level port A3<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<12> connected to top level port A3<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<11> connected to top level port A3<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<10> connected to top level port A3<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<9> connected to top level port A3<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<8> connected to top level port A3<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<7> connected to top level port A3<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<6> connected to top level port A3<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<5> connected to top level port A3<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<4> connected to top level port A3<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<3> connected to top level port A3<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<2> connected to top level port A3<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<1> connected to top level port A3<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A3<0> connected to top level port A3<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<15> connected to top level port A4<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<14> connected to top level port A4<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<13> connected to top level port A4<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<12> connected to top level port A4<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<11> connected to top level port A4<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<10> connected to top level port A4<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<9> connected to top level port A4<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<8> connected to top level port A4<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<7> connected to top level port A4<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<6> connected to top level port A4<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<5> connected to top level port A4<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<4> connected to top level port A4<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<3> connected to top level port A4<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<2> connected to top level port A4<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<1> connected to top level port A4<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A4<0> connected to top level port A4<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<15> connected to top level port A5<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<14> connected to top level port A5<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<13> connected to top level port A5<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<12> connected to top level port A5<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<11> connected to top level port A5<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<10> connected to top level port A5<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<9> connected to top level port A5<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<8> connected to top level port A5<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<7> connected to top level port A5<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<6> connected to top level port A5<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<5> connected to top level port A5<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<4> connected to top level port A5<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<3> connected to top level port A5<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<2> connected to top level port A5<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<1> connected to top level port A5<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A5<0> connected to top level port A5<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<15> connected to top level port A6<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<14> connected to top level port A6<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<13> connected to top level port A6<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<12> connected to top level port A6<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<11> connected to top level port A6<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<10> connected to top level port A6<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<9> connected to top level port A6<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<8> connected to top level port A6<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<7> connected to top level port A6<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<6> connected to top level port A6<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<5> connected to top level port A6<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<4> connected to top level port A6<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<3> connected to top level port A6<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<2> connected to top level port A6<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<1> connected to top level port A6<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A6<0> connected to top level port A6<0> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<15> connected to top level port A7<15> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<14> connected to top level port A7<14> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<13> connected to top level port A7<13> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<12> connected to top level port A7<12> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<11> connected to top level port A7<11> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<10> connected to top level port A7<10> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<9> connected to top level port A7<9> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<8> connected to top level port A7<8> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<7> connected to top level port A7<7> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<6> connected to top level port A7<6> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<5> connected to top level port A7<5> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<4> connected to top level port A7<4> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<3> connected to top level port A7<3> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<2> connected to top level port A7<2> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<1> connected to top level port A7<1> has been
+   removed.
+WARNING:MapLib:701 - Signal A7<0> connected to top level port A7<0> has been
+   removed.
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  129
+Logic Utilization:
+  Number of 4 input LUTs:                80 out of   1,920    4%
+Logic Distribution:
+  Number of occupied Slices:             40 out of     960    4%
+    Number of Slices containing only related logic:      40 out of      40 100%
+    Number of Slices containing unrelated logic:          0 out of      40   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          80 out of   1,920    4%
+  Number of bonded IOBs:                 18 out of      83   21%
+
+Average Fanout of Non-Clock Nets:                1.92
+
+Peak Memory Usage:  662 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "mux4X4bit8to1_map.mrp" for details.

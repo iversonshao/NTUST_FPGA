@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="copy_of_and5b33">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2023-10-22T10:33:28</timestamp>
+    <attr value="AND5B3" name="VeriModel" />
+    <attr value="Copy Of Symbol With Level: XILINX" name="Level" />
+    <attr value="AND5B3" name="VhdlModel" />
+    <attr value="2.0.0" name="Libver" />
+    <pin polarity="Input" x="0" y="-128" name="I1" />
+    <pin polarity="Output" x="256" y="-192" name="O" />
+    <pin polarity="Input" x="0" y="-320" name="I4" />
+    <pin polarity="Input" x="0" y="-256" name="I2" />
+    <pin polarity="Input" x="0" y="-64" name="I3" />
+    <pin polarity="Input" x="0" y="-192" name="I0" />
+    <graph>
+        <line x2="64" y1="-64" y2="-320" x1="64" />
+        <line x2="144" y1="-240" y2="-240" x1="64" />
+        <arc ex="144" ey="-240" sx="144" sy="-144" r="48" cx="144" cy="-192" />
+        <line x2="64" y1="-144" y2="-144" x1="144" />
+        <line x2="192" y1="-192" y2="-192" x1="256" />
+        <line x2="40" y1="-128" y2="-128" x1="0" />
+        <circle r="12" cx="52" cy="-128" />
+        <text style="fontsize:24;fontname:Arial" x="32" y="-32">AND5B33</text>
+        <line x2="64" y1="-320" y2="-320" x1="0" />
+        <circle r="12" cx="52" cy="-256" />
+        <line x2="40" y1="-256" y2="-256" x1="0" />
+        <line x2="64" y1="-64" y2="-64" x1="0" />
+        <line x2="40" y1="-192" y2="-192" x1="0" />
+        <circle r="12" cx="52" cy="-192" />
+    </graph>
+</symbol>

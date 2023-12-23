@@ -1,0 +1,5 @@
+MODULE encoder16to8
+	SUBMODULE encoder8to4
+		INSTANCE XLXI_1
+	SUBMODULE encoder8to4
+		INSTANCE XLXI_2

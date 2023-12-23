@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RISCV16bit/encoder8to4.xst" -ofn "/home/ise/NTUST_FPGA/RISCV16bit/encoder8to4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 encoder8to4.ngc encoder8to4.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o encoder8to4_map.ncd encoder8to4.ngd encoder8to4.pcf 
+par -w -intstyle ise -ol high -t 1 encoder8to4_map.ncd encoder8to4.ncd encoder8to4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml encoder8to4.twx encoder8to4.ncd -o encoder8to4.twr encoder8to4.pcf 

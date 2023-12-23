@@ -1,0 +1,4 @@
+add instance regfile 704 3888 R0 -sn=1
+undo
+add instance regfile 1104 4032 R0 -sn=1
+undo

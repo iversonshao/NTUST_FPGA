@@ -1,0 +1,30 @@
+Command line:
+   mux16bit821_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/mux16bit821_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  35061
+
+Fri Nov 17 09:57:04 2023
+
+
+ Elaboration Time: 0.88 sec
+
+ Current Memory Usage: 210.051 Meg
+
+ Total Signals          : 2685
+ Total Nets             : 1665
+ Total Signal Drivers   : 1235
+ Total Blocks           : 596
+ Total Primitive Blocks : 367
+ Total Processes        : 1368
+ Total Traceable Variables  : 3248
+ Total Scalar Nets and Variables : 20079
+
+ Total Simulation Time: 0.9 sec
+
+ Current Memory Usage: 287.773 Meg
+
+Fri Nov 17 09:59:29 2023
+

@@ -1,0 +1,54 @@
+ISim log file
+Running: /home/ise/NTUST_FPGA/ALU16bit/ALU_tb_isim_par.exe -intstyle ise -gui -sdfmax /uut/=netgen/par/ALU_timesim.sdf -sdfroot /uut -tclbatch isim.cmd -wdb /home/ise/NTUST_FPGA/ALU16bit/ALU_tb_isim_par.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+INFO: SDF backannotation was successful with SDF file netgen/par/ALU_timesim.sdf, for root module /uut/.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+At time                    0, Sum =     x, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                    8, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                    9, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                    9, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                    9, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   10, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   10, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   10, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   10, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   11, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   11, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   11, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   11, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   11, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   12, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   13, Sum =     X, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   13, Sum = 21845, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   17, Sum = 22357, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum = 22365, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum = 22367, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum =  5983, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum =  1887, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum = 34655, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum = 34591, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   18, Sum = 33567, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 33563, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 33691, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 33675, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 33707, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 33451, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 35499, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 43691, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 43755, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   19, Sum = 44779, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   20, Sum = 44771, Zero = x, Negative = x, Carry = x, Overflow = x
+At time                   20, Sum = 44739, Zero = x, Negative = x, Carry = x, Overflow = x
+Stopped at time : 20 ns : File "/home/ise/NTUST_FPGA/ALU16bit/ALU_tb.v" Line 64
+# exit 0

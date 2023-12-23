@@ -1,0 +1,3 @@
+vhdl work "PC_Circuitry.vhf"
+verilog work "PC_Circuitry_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,147 @@
+$date
+   Fri Oct  6 18:34:08 2023
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module testbench_3_to_8_decoder_tb $end
+$var wire 1 ! R [7] $end
+$var wire 1 " R [6] $end
+$var wire 1 # R [5] $end
+$var wire 1 $ R [4] $end
+$var wire 1 % R [3] $end
+$var wire 1 & R [2] $end
+$var wire 1 ' R [1] $end
+$var wire 1 ( R [0] $end
+$var reg 3 ) A [2:0] $end
+$scope module UUT $end
+$var wire 1 [ a0 $end
+$var wire 1 \ a1 $end
+$var wire 1 ] a2 $end
+$var wire 1 V r0 $end
+$var wire 1 R r1 $end
+$var wire 1 N r2 $end
+$var wire 1 > r3 $end
+$var wire 1 B r4 $end
+$var wire 1 F r5 $end
+$var wire 1 J r6 $end
+$var wire 1 Z r7 $end
+$var wire 1 W xlxn_53 $end
+$var wire 1 X xlxn_54 $end
+$var wire 1 Y xlxn_55 $end
+$scope module XLXI_1 $end
+$var wire 1 W o $end
+$var wire 1 [ i $end
+$upscope $end
+$scope module XLXI_2 $end
+$var wire 1 Y o $end
+$var wire 1 ] i $end
+$upscope $end
+$scope module XLXI_3 $end
+$var wire 1 X o $end
+$var wire 1 \ i $end
+$upscope $end
+$scope module XLXI_4 $end
+$var wire 1 > o $end
+$var wire 1 [ i0 $end
+$var wire 1 \ i1 $end
+$var wire 1 Y i2 $end
+$upscope $end
+$scope module XLXI_5 $end
+$var wire 1 B o $end
+$var wire 1 W i0 $end
+$var wire 1 X i1 $end
+$var wire 1 ] i2 $end
+$upscope $end
+$scope module XLXI_6 $end
+$var wire 1 F o $end
+$var wire 1 [ i0 $end
+$var wire 1 X i1 $end
+$var wire 1 ] i2 $end
+$upscope $end
+$scope module XLXI_7 $end
+$var wire 1 J o $end
+$var wire 1 W i0 $end
+$var wire 1 \ i1 $end
+$var wire 1 ] i2 $end
+$upscope $end
+$scope module XLXI_9 $end
+$var wire 1 N o $end
+$var wire 1 W i0 $end
+$var wire 1 \ i1 $end
+$var wire 1 Y i2 $end
+$upscope $end
+$scope module XLXI_10 $end
+$var wire 1 R o $end
+$var wire 1 [ i0 $end
+$var wire 1 X i1 $end
+$var wire 1 Y i2 $end
+$upscope $end
+$scope module XLXI_11 $end
+$var wire 1 V o $end
+$var wire 1 W i0 $end
+$var wire 1 X i1 $end
+$var wire 1 Y i2 $end
+$upscope $end
+$scope module XLXI_13 $end
+$var wire 1 Z o $end
+$var wire 1 [ i0 $end
+$var wire 1 \ i1 $end
+$var wire 1 ] i2 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0>
+0B
+0F
+0J
+0Z
+1[
+0\
+0]
+0V
+1R
+0N
+b1 )
+0(
+1'
+0&
+0%
+0$
+0#
+0"
+0!
+0W
+1X
+1Y
+$end
+#10000
+0[
+1\
+0R
+1N
+b10 )
+0'
+1&
+1W
+0X
+#20000
+0>
+0J
+1Z
+1[
+1]
+0N
+b111 )
+0&
+0%
+0"
+1!
+0W
+0Y

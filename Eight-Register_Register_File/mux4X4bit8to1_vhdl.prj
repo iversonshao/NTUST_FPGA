@@ -1,0 +1,3 @@
+vhdl work "/home/ise/NTUST_FPGA/Eight-Register_Register_File/mux8to1_2.vhf"
+vhdl work "/home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4bit8to1.vhf"
+vhdl work "/home/ise/NTUST_FPGA/Eight-Register_Register_File/mux4X4bit8to1.vhf"

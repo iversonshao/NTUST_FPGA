@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">WEn</arg> connected to top level port <arg fmt="%s" index="2">WEn</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr0</arg> connected to top level port <arg fmt="%s" index="2">addr0</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr1</arg> connected to top level port <arg fmt="%s" index="2">addr1</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr2</arg> connected to top level port <arg fmt="%s" index="2">addr2</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr3</arg> connected to top level port <arg fmt="%s" index="2">addr3</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr4</arg> connected to top level port <arg fmt="%s" index="2">addr4</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">addr7</arg> connected to top level port <arg fmt="%s" index="2">addr7</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;15&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;15&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;14&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;14&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;13&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;13&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;12&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;12&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;11&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;11&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;10&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;10&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;9&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;9&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;8&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;8&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;7&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;7&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;6&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;6&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;5&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;5&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;4&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;4&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;3&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;3&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;2&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;2&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;1&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;1&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="new" >Signal <arg fmt="%s" index="1">data&lt;0&gt;</arg> connected to top level port <arg fmt="%s" index="2">data&lt;0&gt;</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">clk</arg> connected to top level port <arg fmt="%s" index="2">clk</arg> has been removed.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+</messages>
+

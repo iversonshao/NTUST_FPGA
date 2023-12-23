@@ -1,0 +1,12 @@
+AR counter16bit behavioral /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf sub00/vhpl07 1697871510
+EN fd16re_mxilinx_counter16bit NULL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf sub00/vhpl04 1697871507
+EN fd16re_mxilinx_pc_circuitry NULL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf sub00/vhpl00 1697871059
+AR fd16re_mxilinx_pc behavioral /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf sub00/vhpl09 1697871883
+EN pc NULL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf sub00/vhpl10 1697871884
+AR pc_circuitry behavioral /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf sub00/vhpl03 1697871062
+AR fd16re_mxilinx_counter16bit behavioral /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf sub00/vhpl05 1697871508
+EN counter16bit NULL /home/ise/NTUST_FPGA/PC_Circuitry/counter16bit.vhf sub00/vhpl06 1697871509
+EN pc_circuitry NULL /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf sub00/vhpl02 1697871061
+AR fd16re_mxilinx_pc_circuitry behavioral /home/ise/NTUST_FPGA/PC_Circuitry/PC_Circuitry.vhf sub00/vhpl01 1697871060
+AR pc behavioral /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf sub00/vhpl11 1697871885
+EN fd16re_mxilinx_pc NULL /home/ise/NTUST_FPGA/PC_Circuitry/PC.vhf sub00/vhpl08 1697871882

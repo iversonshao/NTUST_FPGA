@@ -1,0 +1,316 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'PC'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o PC_map.ncd PC.ngd PC.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Sat Oct 21 07:02:06 2023
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   18
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0   0%
+    Number of Slices containing unrelated logic:          0 out of       0   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                 16 out of      83   19%
+
+Peak Memory Usage:  662 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:701 - Signal PC_rst connected to top level port PC_rst has been
+   removed.
+WARNING:MapLib:701 - Signal PC_next<15> connected to top level port PC_next<15>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<14> connected to top level port PC_next<14>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<13> connected to top level port PC_next<13>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<12> connected to top level port PC_next<12>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<11> connected to top level port PC_next<11>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<10> connected to top level port PC_next<10>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<9> connected to top level port PC_next<9>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<8> connected to top level port PC_next<8>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<7> connected to top level port PC_next<7>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<6> connected to top level port PC_next<6>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<5> connected to top level port PC_next<5>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<4> connected to top level port PC_next<4>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<3> connected to top level port PC_next<3>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<2> connected to top level port PC_next<2>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<1> connected to top level port PC_next<1>
+   has been removed.
+WARNING:MapLib:701 - Signal PC_next<0> connected to top level port PC_next<0>
+   has been removed.
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s100e' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  37 block(s) removed
+  17 block(s) optimized away
+  38 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "clk_BUFGP/BUFG" (CKBUF) removed.
+  The signal "clk_BUFGP" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "N0" is unused and has been removed.
+The signal "PC_next<0>" is unused and has been removed.
+ Unused block "PC_next<0>" (PAD) removed.
+The signal "PC_next<10>" is unused and has been removed.
+ Unused block "PC_next<10>" (PAD) removed.
+The signal "PC_next<11>" is unused and has been removed.
+ Unused block "PC_next<11>" (PAD) removed.
+The signal "PC_next<12>" is unused and has been removed.
+ Unused block "PC_next<12>" (PAD) removed.
+The signal "PC_next<13>" is unused and has been removed.
+ Unused block "PC_next<13>" (PAD) removed.
+The signal "PC_next<14>" is unused and has been removed.
+ Unused block "PC_next<14>" (PAD) removed.
+The signal "PC_next<15>" is unused and has been removed.
+ Unused block "PC_next<15>" (PAD) removed.
+The signal "PC_next<1>" is unused and has been removed.
+ Unused block "PC_next<1>" (PAD) removed.
+The signal "PC_next<2>" is unused and has been removed.
+ Unused block "PC_next<2>" (PAD) removed.
+The signal "PC_next<3>" is unused and has been removed.
+ Unused block "PC_next<3>" (PAD) removed.
+The signal "PC_next<4>" is unused and has been removed.
+ Unused block "PC_next<4>" (PAD) removed.
+The signal "PC_next<5>" is unused and has been removed.
+ Unused block "PC_next<5>" (PAD) removed.
+The signal "PC_next<6>" is unused and has been removed.
+ Unused block "PC_next<6>" (PAD) removed.
+The signal "PC_next<7>" is unused and has been removed.
+ Unused block "PC_next<7>" (PAD) removed.
+The signal "PC_next<8>" is unused and has been removed.
+ Unused block "PC_next<8>" (PAD) removed.
+The signal "PC_next<9>" is unused and has been removed.
+ Unused block "PC_next<9>" (PAD) removed.
+The signal "PC_next_0_IBUF" is unused and has been removed.
+ Unused block "PC_next_0_IBUF" (BUF) removed.
+The signal "PC_next_10_IBUF" is unused and has been removed.
+ Unused block "PC_next_10_IBUF" (BUF) removed.
+The signal "PC_next_11_IBUF" is unused and has been removed.
+ Unused block "PC_next_11_IBUF" (BUF) removed.
+The signal "PC_next_12_IBUF" is unused and has been removed.
+ Unused block "PC_next_12_IBUF" (BUF) removed.
+The signal "PC_next_13_IBUF" is unused and has been removed.
+ Unused block "PC_next_13_IBUF" (BUF) removed.
+The signal "PC_next_14_IBUF" is unused and has been removed.
+ Unused block "PC_next_14_IBUF" (BUF) removed.
+The signal "PC_next_15_IBUF" is unused and has been removed.
+ Unused block "PC_next_15_IBUF" (BUF) removed.
+The signal "PC_next_1_IBUF" is unused and has been removed.
+ Unused block "PC_next_1_IBUF" (BUF) removed.
+The signal "PC_next_2_IBUF" is unused and has been removed.
+ Unused block "PC_next_2_IBUF" (BUF) removed.
+The signal "PC_next_3_IBUF" is unused and has been removed.
+ Unused block "PC_next_3_IBUF" (BUF) removed.
+The signal "PC_next_4_IBUF" is unused and has been removed.
+ Unused block "PC_next_4_IBUF" (BUF) removed.
+The signal "PC_next_5_IBUF" is unused and has been removed.
+ Unused block "PC_next_5_IBUF" (BUF) removed.
+The signal "PC_next_6_IBUF" is unused and has been removed.
+ Unused block "PC_next_6_IBUF" (BUF) removed.
+The signal "PC_next_7_IBUF" is unused and has been removed.
+ Unused block "PC_next_7_IBUF" (BUF) removed.
+The signal "PC_next_8_IBUF" is unused and has been removed.
+ Unused block "PC_next_8_IBUF" (BUF) removed.
+The signal "PC_next_9_IBUF" is unused and has been removed.
+ Unused block "PC_next_9_IBUF" (BUF) removed.
+The signal "PC_rst" is unused and has been removed.
+ Unused block "PC_rst" (PAD) removed.
+The signal "PC_rst_IBUF" is unused and has been removed.
+ Unused block "PC_rst_IBUF" (BUF) removed.
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+Unused block "clk_BUFGP/IBUFG" (CKBUF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDRE 		XLXI_7/I_Q0
+   optimized to 0
+FDRE 		XLXI_7/I_Q1
+   optimized to 0
+FDRE 		XLXI_7/I_Q10
+   optimized to 0
+FDRE 		XLXI_7/I_Q11
+   optimized to 0
+FDRE 		XLXI_7/I_Q12
+   optimized to 0
+FDRE 		XLXI_7/I_Q13
+   optimized to 0
+FDRE 		XLXI_7/I_Q14
+   optimized to 0
+FDRE 		XLXI_7/I_Q15
+   optimized to 0
+FDRE 		XLXI_7/I_Q2
+   optimized to 0
+FDRE 		XLXI_7/I_Q3
+   optimized to 0
+FDRE 		XLXI_7/I_Q4
+   optimized to 0
+FDRE 		XLXI_7/I_Q5
+   optimized to 0
+FDRE 		XLXI_7/I_Q6
+   optimized to 0
+FDRE 		XLXI_7/I_Q7
+   optimized to 0
+FDRE 		XLXI_7/I_Q8
+   optimized to 0
+FDRE 		XLXI_7/I_Q9
+   optimized to 0
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| PC<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<4>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<5>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<6>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<7>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<8>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<9>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<10>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<11>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<12>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<13>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<14>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| PC<15>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

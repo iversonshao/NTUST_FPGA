@@ -1,0 +1,2 @@
+verilog isim_temp "D_filp_flop_regwce_tb.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

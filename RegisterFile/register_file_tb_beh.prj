@@ -1,0 +1,6 @@
+verilog work "mux16bit821.v"
+verilog work "en_328decoder.v"
+verilog work "Dflipflop16bitclken.v"
+verilog work "register_file.v"
+verilog work "register_file_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

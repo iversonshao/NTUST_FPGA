@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.syr" 
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I en_328decoder.ngc en_328decoder.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o en_328decoder_map.ncd en_328decoder.ngd en_328decoder.pcf 
+par -w -intstyle ise -ol high -mt off en_328decoder_map.ncd en_328decoder.ncd en_328decoder.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml en_328decoder.twx en_328decoder.ncd -o en_328decoder.twr en_328decoder.pcf 
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I en_328decoder.ngc en_328decoder.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o en_328decoder_map.ncd en_328decoder.ngd en_328decoder.pcf 
+par -w -intstyle ise -ol high -mt off en_328decoder_map.ncd en_328decoder.ncd en_328decoder.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml en_328decoder.twx en_328decoder.ncd -o en_328decoder.twr en_328decoder.pcf 
+netgen -intstyle ise -s 2I  -pcf en_328decoder.pcf -rpw 100 -tpw 0 -ar Structure -tm en_328decoder -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim en_328decoder.ncd en_328decoder_timesim.vhd 
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.xst" -ofn "/home/ise/NTUST_FPGA/RegisterFile/en_328decoder.syr" 

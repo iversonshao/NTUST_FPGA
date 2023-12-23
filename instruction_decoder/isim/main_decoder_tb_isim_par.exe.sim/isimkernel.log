@@ -1,0 +1,30 @@
+Command line:
+   main_decoder_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /UUT/=netgen/par/main_decoder_timesim.sdf
+     -sdfroot  /UUT
+     -simrunnum  0
+     -socket  41090
+
+Wed Oct 25 12:00:00 2023
+
+
+ Elaboration Time: 0.33 sec
+
+ Current Memory Usage: 203.174 Meg
+
+ Total Signals          : 972
+ Total Nets             : 544
+ Total Signal Drivers   : 509
+ Total Blocks           : 278
+ Total Primitive Blocks : 143
+ Total Processes        : 511
+ Total Traceable Variables  : 1310
+ Total Scalar Nets and Variables : 9594
+
+ Total Simulation Time: 0.34 sec
+
+ Current Memory Usage: 280.895 Meg
+
+Wed Oct 25 12:01:54 2023
+

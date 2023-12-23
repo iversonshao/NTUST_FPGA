@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/Memory_Module256x16/RAM32X16S.xst" -ofn "/home/ise/NTUST_FPGA/Memory_Module256x16/RAM32X16S.syr" 

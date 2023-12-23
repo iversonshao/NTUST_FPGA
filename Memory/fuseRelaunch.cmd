@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/NTUST_FPGA/Memory/Memory_module_tb_isim_par.exe" -prj "/home/ise/NTUST_FPGA/Memory/Memory_module_tb_par.prj" "work.Memory_module_tb" "work.glbl" 

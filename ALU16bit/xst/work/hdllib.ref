@@ -1,0 +1,6 @@
+MO fulladder NULL fulladder.v vlg33/fulladder.bin 1701237672
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1701237672
+MO flagC NULL ALU.v vlg01/flag_c.bin 1701237672
+MO flagN NULL ALU.v vlg0C/flag_n.bin 1701237672
+MO flagV NULL ALU.v vlg14/flag_v.bin 1701237672
+MO flagZ NULL ALU.v vlg18/flag_z.bin 1701237672

@@ -1,0 +1,3 @@
+MODULE extend
+	SUBMODULE mux3bit2to1
+		INSTANCE XLXI_46

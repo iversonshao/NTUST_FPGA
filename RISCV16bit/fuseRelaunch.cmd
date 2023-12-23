@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb_isim_par.exe" -prj "/home/ise/NTUST_FPGA/RISCV16bit/RISCV16bit_tb_par.prj" "RISCV16bit_tb" "work.glbl" 

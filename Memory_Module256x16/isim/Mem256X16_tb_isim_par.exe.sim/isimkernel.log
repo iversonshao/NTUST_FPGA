@@ -1,0 +1,30 @@
+Command line:
+   Mem256X16_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/Mem256X16_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  51191
+
+Sat Oct 21 04:32:31 2023
+
+
+ Elaboration Time: 0.42 sec
+
+ Current Memory Usage: 205.742 Meg
+
+ Total Signals          : 1591
+ Total Nets             : 905
+ Total Signal Drivers   : 844
+ Total Blocks           : 436
+ Total Primitive Blocks : 222
+ Total Processes        : 847
+ Total Traceable Variables  : 2106
+ Total Scalar Nets and Variables : 13067
+
+ Total Simulation Time: 0.43 sec
+
+ Current Memory Usage: 283.472 Meg
+
+Sat Oct 21 04:33:00 2023
+

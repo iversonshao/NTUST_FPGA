@@ -1,0 +1,1239 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: Risc.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Risc.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Risc"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : Risc
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mux16bit821.v" in library work
+Compiling verilog file "fulladder.v" in library work
+Module <mux16bit821> compiled
+Compiling verilog file "en_328decoder.v" in library work
+Module <fulladder> compiled
+Compiling verilog file "Dflipflop16bitclken.v" in library work
+Module <en_328decoder> compiled
+Compiling verilog file "testdecoder.v" in library work
+Module <Dflipflop16bitclken> compiled
+Compiling verilog file "signextend.v" in library work
+Module <testdecoder> compiled
+Compiling verilog file "shift8bit.v" in library work
+Module <signextend> compiled
+Compiling verilog file "register_file.v" in library work
+Module <shift8bit> compiled
+Compiling verilog file "PC.v" in library work
+Module <register_file> compiled
+Compiling verilog file "mux3bit221.v" in library work
+Module <PC> compiled
+Compiling verilog file "mux221.v" in library work
+Module <mux3bit221> compiled
+Compiling verilog file "mux16bit321.v" in library work
+Module <mux221> compiled
+Compiling verilog file "mux16bit221.v" in library work
+Module <mux16bit321> compiled
+Compiling verilog file "Memory_module.v" in library work
+Module <mux16bit221> compiled
+Compiling verilog file "main_decoder.v" in library work
+Module <Memory_module> compiled
+Compiling verilog file "encoder1628.v" in library work
+Module <main_decoder> compiled
+Compiling verilog file "demux16bit122.v" in library work
+Module <encoder1628> compiled
+Compiling verilog file "branchdetech.v" in library work
+Module <demux16bit122> compiled
+Compiling verilog file "Bitmask.v" in library work
+Module <branchdetech> compiled
+Compiling verilog file "ALUdecoder.v" in library work
+Module <Bitmask> compiled
+Compiling verilog file "ALU.v" in library work
+Module <ALUdecoder> compiled
+Module <ALU> compiled
+Module <flagN> compiled
+Module <flagZ> compiled
+Module <flagC> compiled
+Compiling verilog file "adder16bit.v" in library work
+Module <flagV> compiled
+Compiling verilog file "Risc.v" in library work
+Module <adder16bit> compiled
+Module <Risc> compiled
+No errors in compilation
+Analysis of file <"Risc.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Risc> in library <work>.
+
+Analyzing hierarchy for module <PC> in library <work>.
+
+Analyzing hierarchy for module <adder16bit> in library <work>.
+
+Analyzing hierarchy for module <encoder1628> in library <work>.
+
+Analyzing hierarchy for module <Memory_module> in library <work>.
+
+Analyzing hierarchy for module <mux3bit221> in library <work>.
+
+Analyzing hierarchy for module <mux16bit321> in library <work>.
+
+Analyzing hierarchy for module <signextend> in library <work>.
+
+Analyzing hierarchy for module <shift8bit> in library <work>.
+
+Analyzing hierarchy for module <register_file> in library <work>.
+
+Analyzing hierarchy for module <Bitmask> in library <work>.
+
+Analyzing hierarchy for module <mux16bit221> in library <work>.
+
+Analyzing hierarchy for module <ALUdecoder> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <branchdetech> in library <work>.
+
+Analyzing hierarchy for module <main_decoder> in library <work>.
+
+Analyzing hierarchy for module <testdecoder> in library <work>.
+
+Analyzing hierarchy for module <demux16bit122> in library <work>.
+
+Analyzing hierarchy for module <Dflipflop16bitclken> in library <work>.
+
+Analyzing hierarchy for module <mux221> in library <work>.
+
+Analyzing hierarchy for module <en_328decoder> in library <work>.
+
+Analyzing hierarchy for module <mux16bit821> in library <work>.
+
+Analyzing hierarchy for module <flagN> in library <work>.
+
+Analyzing hierarchy for module <flagZ> in library <work>.
+
+Analyzing hierarchy for module <flagC> in library <work>.
+
+Analyzing hierarchy for module <flagV> in library <work>.
+
+Analyzing hierarchy for module <fulladder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Risc>.
+WARNING:Xst:852 - "Risc.v" line 287: Unconnected input port 'test' of instance 'td' is tied to GND.
+Module <Risc> is correct for synthesis.
+ 
+Analyzing module <PC> in library <work>.
+Module <PC> is correct for synthesis.
+ 
+Analyzing module <adder16bit> in library <work>.
+Module <adder16bit> is correct for synthesis.
+ 
+Analyzing module <encoder1628> in library <work>.
+Module <encoder1628> is correct for synthesis.
+ 
+Analyzing module <Memory_module> in library <work>.
+Module <Memory_module> is correct for synthesis.
+ 
+Analyzing module <mux3bit221> in library <work>.
+Module <mux3bit221> is correct for synthesis.
+ 
+Analyzing module <mux16bit321> in library <work>.
+Module <mux16bit321> is correct for synthesis.
+ 
+Analyzing module <signextend> in library <work>.
+Module <signextend> is correct for synthesis.
+ 
+Analyzing module <shift8bit> in library <work>.
+Module <shift8bit> is correct for synthesis.
+ 
+Analyzing module <register_file> in library <work>.
+Module <register_file> is correct for synthesis.
+ 
+Analyzing module <en_328decoder> in library <work>.
+Module <en_328decoder> is correct for synthesis.
+ 
+Analyzing module <mux16bit821> in library <work>.
+Module <mux16bit821> is correct for synthesis.
+ 
+Analyzing module <Bitmask> in library <work>.
+Module <Bitmask> is correct for synthesis.
+ 
+Analyzing module <mux16bit221> in library <work>.
+Module <mux16bit221> is correct for synthesis.
+ 
+Analyzing module <ALUdecoder> in library <work>.
+Module <ALUdecoder> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <flagN> in library <work>.
+Module <flagN> is correct for synthesis.
+ 
+Analyzing module <flagZ> in library <work>.
+Module <flagZ> is correct for synthesis.
+ 
+Analyzing module <flagC> in library <work>.
+Module <flagC> is correct for synthesis.
+ 
+Analyzing module <flagV> in library <work>.
+Module <flagV> is correct for synthesis.
+ 
+Analyzing module <fulladder> in library <work>.
+Module <fulladder> is correct for synthesis.
+ 
+Analyzing module <branchdetech> in library <work>.
+Module <branchdetech> is correct for synthesis.
+ 
+Analyzing module <main_decoder> in library <work>.
+Module <main_decoder> is correct for synthesis.
+ 
+Analyzing module <testdecoder> in library <work>.
+Module <testdecoder> is correct for synthesis.
+ 
+Analyzing module <demux16bit122> in library <work>.
+Module <demux16bit122> is correct for synthesis.
+ 
+Analyzing module <Dflipflop16bitclken> in library <work>.
+Module <Dflipflop16bitclken> is correct for synthesis.
+ 
+Analyzing module <mux221> in library <work>.
+Module <mux221> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PC>.
+    Related source file is "PC.v".
+    Found 16-bit register for signal <PC>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <adder16bit>.
+    Related source file is "adder16bit.v".
+    Found 16-bit adder for signal <S>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder16bit> synthesized.
+
+
+Synthesizing Unit <encoder1628>.
+    Related source file is "encoder1628.v".
+    Found 1-bit xor4 for signal <ecoutput0>.
+    Found 1-bit xor4 for signal <ecoutput1>.
+    Found 1-bit xor2 for signal <ecoutput2>.
+    Found 1-bit xor2 for signal <ecoutput3>.
+    Found 1-bit xor2 for signal <ecoutput4>.
+    Found 1-bit xor2 for signal <ecoutput5>.
+    Found 1-bit xor8 for signal <ecoutput6>.
+    Found 1-bit xor8 for signal <ecoutput7>.
+    Found 1-bit xor2 for signal <ecoutput0$xor0000> created at line 33.
+    Found 1-bit xor2 for signal <ecoutput0$xor0001> created at line 33.
+    Found 1-bit xor2 for signal <ecoutput0$xor0002> created at line 33.
+    Found 1-bit xor2 for signal <ecoutput0$xor0003> created at line 33.
+    Found 1-bit xor2 for signal <ecoutput1$xor0000> created at line 34.
+    Found 1-bit xor2 for signal <ecoutput1$xor0001> created at line 34.
+    Found 1-bit xor2 for signal <ecoutput1$xor0002> created at line 34.
+    Found 1-bit xor2 for signal <ecoutput1$xor0003> created at line 34.
+    Summary:
+	inferred   4 Xor(s).
+Unit <encoder1628> synthesized.
+
+
+Synthesizing Unit <Memory_module>.
+    Related source file is "Memory_module.v".
+    Found 256x16-bit single-port RAM <Mram_mem> for signal <mem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <Memory_module> synthesized.
+
+
+Synthesizing Unit <mux3bit221>.
+    Related source file is "mux3bit221.v".
+Unit <mux3bit221> synthesized.
+
+
+Synthesizing Unit <mux16bit321>.
+    Related source file is "mux16bit321.v".
+    Found 16-bit 4-to-1 multiplexer for signal <out>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <mux16bit321> synthesized.
+
+
+Synthesizing Unit <signextend>.
+    Related source file is "signextend.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <signextend> synthesized.
+
+
+Synthesizing Unit <shift8bit>.
+    Related source file is "shift8bit.v".
+Unit <shift8bit> synthesized.
+
+
+Synthesizing Unit <Bitmask>.
+    Related source file is "Bitmask.v".
+WARNING:Xst:647 - Input <data<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <Bitmask> synthesized.
+
+
+Synthesizing Unit <mux16bit221>.
+    Related source file is "mux16bit221.v".
+Unit <mux16bit221> synthesized.
+
+
+Synthesizing Unit <ALUdecoder>.
+    Related source file is "ALUdecoder.v".
+Unit <ALUdecoder> synthesized.
+
+
+Synthesizing Unit <branchdetech>.
+    Related source file is "branchdetech.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <bccout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <bcsout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <bneout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <beqout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <BAL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <branchdetech> synthesized.
+
+
+Synthesizing Unit <main_decoder>.
+    Related source file is "main_decoder.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <RegDst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrc1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrc2_01>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrc2_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ResultSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <WriteSrc1_01>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <WriteSrc2_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ImmSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <JarSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Test>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <main_decoder> synthesized.
+
+
+Synthesizing Unit <testdecoder>.
+    Related source file is "testdecoder.v".
+Unit <testdecoder> synthesized.
+
+
+Synthesizing Unit <demux16bit122>.
+    Related source file is "demux16bit122.v".
+WARNING:Xst:737 - Found 16-bit latch for signal <Y1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <Y0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <demux16bit122> synthesized.
+
+
+Synthesizing Unit <Dflipflop16bitclken>.
+    Related source file is "Dflipflop16bitclken.v".
+    Found 16-bit register for signal <qout>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Dflipflop16bitclken> synthesized.
+
+
+Synthesizing Unit <mux221>.
+    Related source file is "mux221.v".
+Unit <mux221> synthesized.
+
+
+Synthesizing Unit <en_328decoder>.
+    Related source file is "en_328decoder.v".
+Unit <en_328decoder> synthesized.
+
+
+Synthesizing Unit <mux16bit821>.
+    Related source file is "mux16bit821.v".
+    Found 16-bit 8-to-1 multiplexer for signal <Y>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <mux16bit821> synthesized.
+
+
+Synthesizing Unit <flagN>.
+    Related source file is "ALU.v".
+Unit <flagN> synthesized.
+
+
+Synthesizing Unit <flagZ>.
+    Related source file is "ALU.v".
+Unit <flagZ> synthesized.
+
+
+Synthesizing Unit <flagC>.
+    Related source file is "ALU.v".
+Unit <flagC> synthesized.
+
+
+Synthesizing Unit <flagV>.
+    Related source file is "ALU.v".
+    Found 1-bit xor2 for signal <V$xor0000> created at line 119.
+    Found 1-bit xor2 for signal <V$xor0001> created at line 119.
+Unit <flagV> synthesized.
+
+
+Synthesizing Unit <fulladder>.
+    Related source file is "fulladder.v".
+    Found 1-bit xor2 for signal <S>.
+    Found 1-bit xor2 for signal <cout$xor0000> created at line 30.
+Unit <fulladder> synthesized.
+
+
+Synthesizing Unit <register_file>.
+    Related source file is "register_file.v".
+Unit <register_file> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+WARNING:Xst:1305 - Output <C> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <N> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <V> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <Z> is never assigned. Tied to value 0.
+    Found 16-bit xor2 for signal <xb>.
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Risc>.
+    Related source file is "Risc.v".
+WARNING:Xst:653 - Signal <wd> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <muxregdsto> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cout> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <WirteSrc2_10> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <V> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <N> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Imout1> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Risc> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <fN> of the block <flagN> are unconnected in block <ALU>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <fC> of the block <flagC> are unconnected in block <ALU>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <muxregdst> of the block <mux3bit221> are unconnected in block <Risc>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x16-bit single-port RAM                            : 2
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 2
+# Registers                                            : 10
+ 16-bit register                                       : 10
+# Latches                                              : 23
+ 1-bit latch                                           : 20
+ 16-bit latch                                          : 3
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 2
+# Xors                                                 : 82
+ 1-bit xor2                                            : 74
+ 1-bit xor4                                            : 4
+ 1-bit xor8                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <fZ> is unconnected in block <alu>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fV> is unconnected in block <alu>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <td> is unconnected in block <Risc>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <qout_15> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_14> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_13> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_12> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_11> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_10> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_9> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_8> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_7> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_6> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_5> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_4> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_3> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_2> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_1> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qout_0> (without init value) has a constant value of 0 in block <OutRegister>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <bneout>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <bccout>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+
+Synthesizing (advanced) Unit <Memory_module>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WEn>           | high     |
+    |     addrA          | connected to signal <addr0>         |          |
+    |     diA            | connected to signal <data>          |          |
+    |     doA            | connected to signal <qout>          |          |
+    -----------------------------------------------------------------------
+Unit <Memory_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x16-bit single-port distributed RAM                : 2
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 2
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Latches                                              : 23
+ 1-bit latch                                           : 20
+ 16-bit latch                                          : 3
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 2
+# Xors                                                 : 82
+ 1-bit xor2                                            : 74
+ 1-bit xor4                                            : 4
+ 1-bit xor8                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <se/out_15> in Unit <Risc> is equivalent to the following 8 FFs/Latches, which will be removed : <se/out_14> <se/out_13> <se/out_12> <se/out_11> <se/out_10> <se/out_9> <se/out_8> <se/out_7> 
+WARNING:Xst:1710 - FF/Latch <demuxOutR/Y1_0> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y1_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <demuxOutR/Y0_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:1294 - Latch <demuxOutR/Y0_0> is equivalent to a wire in block <Risc>.
+
+Optimizing unit <Risc> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <branchdetech> ...
+
+Optimizing unit <main_decoder> ...
+
+Optimizing unit <Dflipflop16bitclken> ...
+
+Optimizing unit <register_file> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1710 - FF/Latch <OutRegister/qout_15> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_14> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_13> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_12> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_11> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_10> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_9> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_8> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_7> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_6> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_5> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_4> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_3> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_2> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_1> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OutRegister/qout_0> (without init value) has a constant value of 0 in block <Risc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <se/out_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <se/out_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem16> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem19> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem17> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem18> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem20> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem21> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem22> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem23> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem24> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem25> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem28> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem26> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem27> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem29> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem30> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem33> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem31> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem32> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem34> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem35> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem38> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem36> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem37> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem39> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem40> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem41> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem42> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem43> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem44> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem47> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem45> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem46> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem48> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem49> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem52> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem50> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem51> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem53> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem54> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem57> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem55> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem56> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem58> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem59> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem60> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem61> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem62> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem63> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem66> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem64> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem65> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem67> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem68> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem71> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem69> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem70> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem72> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem73> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem76> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem74> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem75> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem77> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem78> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem79> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem80> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem81> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem82> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem85> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem83> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem84> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem86> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem87> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem90> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem88> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem89> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem91> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem92> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem95> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem93> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem94> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem96> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem97> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem98> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem99> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem100> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem101> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem104> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem102> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem103> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem105> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem106> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem109> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem107> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem108> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem110> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem111> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem114> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem112> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem113> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem115> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem116> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem117> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem118> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem119> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem120> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem123> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem121> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem122> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem124> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem125> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem126> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem127> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <Instructmem/Mram_mem128> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem16> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem17> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem20> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem18> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem19> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem21> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem22> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem25> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem23> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem24> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem26> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem27> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem28> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem29> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem30> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem31> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem34> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem32> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem33> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem35> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem36> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem39> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem37> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem38> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem40> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem41> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem44> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem42> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem43> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem45> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem46> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem47> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem48> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem49> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem50> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem53> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem51> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem52> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem54> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem55> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem58> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem56> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem57> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem59> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem60> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem63> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem61> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem62> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem64> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem65> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem66> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem67> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem68> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem69> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem72> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem70> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem71> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem73> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem74> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem77> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem75> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem76> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem78> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem79> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem82> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem80> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem81> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem83> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem84> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem85> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem86> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem87> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem88> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem91> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem89> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem90> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem92> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem93> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem96> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem94> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem95> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem97> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem98> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem101> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem99> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem100> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem102> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem103> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem104> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem105> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem106> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem107> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem110> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem108> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem109> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem111> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem112> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem115> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem113> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem114> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem116> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem117> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem120> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem118> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem119> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem121> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem122> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem123> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem124> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem125> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem126> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem127> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <datamem/Mram_mem128> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <pc/PC_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <bd/bccout> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <bd/bcsout> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <bd/bneout> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <bd/beqout> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <bd/BAL> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/RegDst> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/ALUSrc1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/ALUSrc2_01> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/ResultSrc> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/MemWrite> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/RegWrite> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/Branch> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/ALUOp> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/WriteSrc1_01> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/WriteSrc2_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/ImmSrc> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/Jump> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/JarSrc> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <control/Test> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg0/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg1/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg2/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg3/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg4/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg5/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg6/qout_15> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_0> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_1> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_2> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_3> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_4> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_5> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_6> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_7> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_8> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_9> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_10> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_11> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_12> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_13> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_14> of sequential type is unconnected in block <Risc>.
+WARNING:Xst:2677 - Node <regfile/reg7/qout_15> of sequential type is unconnected in block <Risc>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Risc, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Risc.ngr
+Top Level Output File Name         : Risc
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 17
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  17  out of     83    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 1.25 secs
+ 
+--> 
+
+
+Total memory usage is 628128 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  543 (   0 filtered)
+Number of infos    :   21 (   0 filtered)
+

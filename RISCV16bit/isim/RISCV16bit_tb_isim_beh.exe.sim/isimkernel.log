@@ -1,0 +1,28 @@
+Command line:
+   RISCV16bit_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52545
+
+Mon Oct 30 08:10:39 2023
+
+
+ Elaboration Time: 0.28 sec
+
+ Current Memory Usage: 235.753 Meg
+
+ Total Signals          : 14609
+ Total Nets             : 11238
+ Total Signal Drivers   : 2588
+ Total Blocks           : 2919
+ Total Primitive Blocks : 2233
+ Total Processes        : 2372
+ Total Traceable Variables  : 569
+ Total Scalar Nets and Variables : 24534
+
+ Total Simulation Time: 0.31 sec
+
+ Current Memory Usage: 313.352 Meg
+
+Mon Oct 30 08:11:28 2023
+

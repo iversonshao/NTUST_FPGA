@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/NTUST_FPGA/RISCV16bit/decoder16bit4to8.xst" -ofn "/home/ise/NTUST_FPGA/RISCV16bit/decoder16bit4to8.syr" 
