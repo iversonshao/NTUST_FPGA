@@ -24,7 +24,7 @@ module adder16bit(
     output reg [15:0] S
 );
 
-always @* begin
+always @(*) begin
     S = A + B;
 end
 
